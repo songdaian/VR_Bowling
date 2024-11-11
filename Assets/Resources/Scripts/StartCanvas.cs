@@ -7,12 +7,14 @@ public class StartCanvas : MonoBehaviour
 {
     private Transform m_StartBtn_Transform;
     private Transform m_ExitBtn_Transform;
+    private LoadingPanel m_LoadingPanel;
 
     // Start is called before the first frame update
     void Start()
     {
         m_StartBtn_Transform = transform.Find("StartPanel/StartButton");
         m_ExitBtn_Transform = transform.Find("StartPanel/ExitButton");
+        m_LoadingPanel = transform.GetComponentInChildren<LoadingPanel>();
     }
 
     /// <summary>
@@ -20,7 +22,7 @@ public class StartCanvas : MonoBehaviour
     /// </summary>
     public void OnStartBtnClick()
     {
-
+        m_LoadingPanel.StartLoad();
     }
 
     /// <summary>

@@ -2138,7 +2138,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BallPrefab: {fileID: 9114362253501112798, guid: 30ea2d8b107f67e4e871f543e2b96a43, type: 3}
-  m_Textures: []
+  m_Textures:
+  - {fileID: 2800000, guid: 13b5377f039bda04980f313292bf12da, type: 3}
+  - {fileID: 2800000, guid: 1625795adb6684049a001ab043a63f39, type: 3}
+  - {fileID: 2800000, guid: 4c5d6a23d6b8e1b44bbb1dcfa5a563f2, type: 3}
+  - {fileID: 2800000, guid: cfe83af2045e79f44b37c69a51fcdf12, type: 3}
+  - {fileID: 2800000, guid: b18488f31d16b3e41892baf176d69f85, type: 3}
+  - {fileID: 2800000, guid: 291ac984357fb024abccc5404762c794, type: 3}
+  - {fileID: 2800000, guid: 6ed8cf596c61ced47adb746e83220c67, type: 3}
+  - {fileID: 2800000, guid: aac9ef10650dfba4bbea82bd11a7db6e, type: 3}
+  - {fileID: 2800000, guid: 809bf28fbeab53248ab4f5e344c5a8aa, type: 3}
 --- !u!1 &2060642634
 GameObject:
   m_ObjectHideFlags: 0

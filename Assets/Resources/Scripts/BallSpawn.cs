@@ -5,8 +5,8 @@ using UnityEngine;
 public class BallSpawn : MonoBehaviour
 {
     public GameObject m_BallPrefab;//保龄球预制体
-    //public List<Texture> m_Textures;//保龄球贴图列表
-    //private int m_TextureIndex = 0;//保龄球贴图索引
+    public List<Texture> m_Textures;//保龄球贴图列表
+    private int m_TextureIndex = 0;//保龄球贴图索引
     private int m_TargetBallCount = 5;//保龄球的目标数量
     private int m_CurrentBallCount = 0;//当前的保龄球数量
     private float m_SpawnInterval = 2.0f;//生成保龄球的时间间隔
@@ -56,13 +56,13 @@ public class BallSpawn : MonoBehaviour
         ball.transform.position = transform.position;
         ball.transform.rotation = Quaternion.identity;
 
-        //ball.GetComponent<MeshRenderer>().material.SetTexture("_MainTex", m_Textures[m_TextureIndex]);
+        ball.GetComponent<MeshRenderer>().material.SetTexture("_MainTex", m_Textures[m_TextureIndex]);
 
-        //m_TextureIndex++;
-        //if (m_TextureIndex >= m_Textures.Count)
-        //{
-        //    m_TextureIndex = 0;
-        //}
+        m_TextureIndex++;
+        if (m_TextureIndex >= m_Textures.Count)
+        {
+            m_TextureIndex = 0;
+        }
 
         //保龄球数量增加
         m_CurrentBallCount += 1;

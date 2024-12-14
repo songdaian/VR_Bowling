@@ -4437,3 +4437,858 @@
 [2024-12-13 17:53:27.567] [PSS] [error] [5340|11608]transport_client_tcp2.cpp:176 HandleReceiveDataResult: receive error= 10054, msg= 远程主机强迫关闭了一个现有的连接。
 [2024-12-13 17:53:27.567] [PSS] [error] [5340|11608]transport_client_tcp2.cpp:180 HandleReceiveDataResult: has been disconnected, this= 0x29fc1659900
 [2024-12-13 17:53:27.567] [PSS] [debug] [5340|22472]streaming_driver_interface_impl.cpp:699 HandleNetworkDisconnect: handle network disconnect,reason= 10054, this= 0x29fbfc01070
+[2024-12-13 18:01:30.836] [PSS] [debug] [5340|6112]streaming_driver_interface_impl.cpp:25 StreamingDriverInterfaceImpl: callback= 0x29fbe78b0b0, this= 0x29fbf957570
+[2024-12-13 18:01:30.836] [PSS] [debug] [5340|6112]streaming_driver_interface_impl.cpp:30 ~StreamingDriverInterfaceImpl: called, this= 0x29fbfc01070
+[2024-12-13 18:01:30.836] [PSS] [debug] [5340|6112]transport_client_tcp2.cpp:71 Stop: called, this= 0x29fc1659900
+[2024-12-13 18:01:30.837] [PSS] [debug] [5340|6112]streaming_driver_interface_impl.cpp:95 SetTrackingOrigin: tracking origin= StageLevel, this= 0x29fbf957570
+[2024-12-13 18:01:30.837] [PSS] [debug] [5340|6112]streaming_driver_interface_impl.cpp:39 ConnectToService: try to connect to service, this= 0x29fbf957570
+[2024-12-13 18:01:30.837] [PSS] [error] [5340|3104]streaming_driver_interface_impl.cpp:572 InvokeSetTrackingOrigin: "invalid media session", !media_session_, this= 0x29fbf957570
+[2024-12-13 18:01:30.837] [PSS] [debug] [5340|3104]streaming_driver_interface_impl.cpp:469 InvokeConnectToService: connect to service through the network, port= 54000, this= 0x29fbf957570
+[2024-12-13 18:01:30.837] [PSS] [debug] [5340|3104]transport_client_tcp2.cpp:34 Start: buffer size(send\recv): 1048576\1048576, this= 0x29fc164d720
+[2024-12-13 18:01:30.837] [PSS] [info] [5340|3104]transport_client_tcp2.cpp:58 Start: server= 127.0.0.1:54000, local=0.0.0.0:0, this= 0x29fc164d720
+[2024-12-13 18:01:30.837] [PSS] [debug] [5340|3104]transport_data_receiver_raw.cpp:34 UpdateConfig: enable_channel= 1, enable_packet= 1, sink= 0x29fc164d730, this= 0x29fbfe7cce0
+[2024-12-13 18:01:30.838] [PSS] [debug] [5340|20060]streaming_driver_interface_impl.cpp:248 NotifyConnectResult: network connect to service result= 0, this= 0x29fbf957570
+[2024-12-13 18:01:30.838] [PSS] [debug] [5340|20060]transport_client_tcp2.cpp:120 HandleConnect: local= 127.0.0.1:57137, this= 0x29fc164d720
+[2024-12-13 18:01:30.838] [PSS] [debug] [5340|3104]streaming_driver_interface_impl.cpp:482 InvokeConnectToServiceByRpc: begin to connect to service by rpc, this= 0x29fbf957570
+[2024-12-13 18:01:30.838] [PSS] [debug] [5340|3104]driver_rpc.cpp:87 ConnectToService: connect to service, request_id= 0, req = client_id: "x22N7RVWAczCMpBV" client_name: "StreamingDriverSDK" client_version: "2.0.2.11" client_description: "StreamingSceneRender", this= 0x2a01ccb7c90
+[2024-12-13 18:01:30.838] [PSS] [debug] [5340|3104]streaming_driver_interface_impl.cpp:499 InvokeConnectToServiceByRpc: connecting to service by rpc, local client_id= x22N7RVWAczCMpBV, this= 0x29fbf957570
+[2024-12-13 18:01:30.839] [PSS] [debug] [5340|3104]driver_rpc.cpp:277 HandleConnectToServiceResp: connect to service result= 0, this= 0x2a01ccb7c90
+[2024-12-13 18:01:30.839] [PSS] [debug] [5340|3104]streaming_driver_interface_impl.cpp:270 NotifyConnectToServiceResult: connect to service result= 0, this= 0x29fbf957570
+[2024-12-13 18:01:30.839] [PSS] [debug] [5340|3104]streaming_driver_interface_impl.cpp:753 CreateMediaSession: try to create session, this= 0x29fbf957570
+[2024-12-13 18:01:30.839] [PSS] [debug] [5340|3104]driver_media_session.cpp:16 DriverMediaSession: session_id= hLwErsTMYZYlzuvb, this= 0x29fbfa1c080
+[2024-12-13 18:01:30.839] [PSS] [debug] [5340|3104]driver_media_session.cpp:28 Init: init media session, role= 0 session_id= hLwErsTMYZYlzuvb, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= TCxFGVMCvvLIPqkF},, this= 0x29fbfa1c080
+[2024-12-13 18:01:30.839] [PSS] [info] [5340|3104]media_session_impl.cpp:16 SetLocalParam: set local param session_id= hLwErsTMYZYlzuvb, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= TCxFGVMCvvLIPqkF},, this= 0x29fcc537400
+[2024-12-13 18:01:30.839] [PSS] [debug] [5340|3104]media_session_impl.cpp:285 UpdateStream: update stream session_id= hLwErsTMYZYlzuvb, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= TCxFGVMCvvLIPqkF},, this= 0x29fcc537400
+[2024-12-13 18:01:30.839] [PSS] [debug] [5340|3104]media_transport.cpp:20 Init: try to add channel to external_transport,channel= 1, this= 0x29f9cc308b0
+[2024-12-13 18:01:30.839] [PSS] [debug] [5340|3104]streaming_driver_interface_impl.cpp:435 AddMediaDataCallback: add transport channel= 1,callback= 0x29f9cc308b0, this= 0x29fbf957570
+[2024-12-13 18:01:30.839] [PSS] [debug] [5340|3104]media_transport.cpp:27 Init: init media_transport success, this= 0x29f9cc308b0
+[2024-12-13 18:01:30.839] [PSS] [info] [5340|3104]event_stream_impl.cpp:16 Init: event stream stream_id= TCxFGVMCvvLIPqkF, this= 0x2a0b5dc4390
+[2024-12-13 18:01:30.839] [PSS] [debug] [5340|3104]event_stream_impl.cpp:23 Init: init event stream success, this= 0x2a0b5dc4390
+[2024-12-13 18:01:30.839] [PSS] [debug] [5340|3104]event_stream_impl.cpp:106 SetMediaTransport: set media_transport to event stream, this= 0x2a0b5dc4390
+[2024-12-13 18:01:30.839] [PSS] [debug] [5340|3104]media_transport.cpp:55 AddMediaDataCallback: callback= 0x2a0b5dc43a8, this= 0x29f9cc308b0
+[2024-12-13 18:01:30.839] [PSS] [debug] [5340|3104]media_session_impl.cpp:537 UpdateEventStream: update event stream success, stream_id= TCxFGVMCvvLIPqkF, this= 0x29fcc537400
+[2024-12-13 18:01:30.839] [PSS] [debug] [5340|3104]media_session_impl.cpp:337 UpdateStream: update stream success, this= 0x29fcc537400
+[2024-12-13 18:01:30.839] [PSS] [debug] [5340|3104]media_session_impl.cpp:30 SetLocalParam: set local param success, this= 0x29fcc537400
+[2024-12-13 18:01:30.839] [PSS] [info] [5340|3104]media_session_impl.cpp:177 GetEventStream: stream_id= TCxFGVMCvvLIPqkF, this= 0x29fcc537400
+[2024-12-13 18:01:30.839] [PSS] [debug] [5340|3104]driver_media_session.cpp:64 Init: init media session success, this= 0x29fbfa1c080
+[2024-12-13 18:01:30.839] [PSS] [debug] [5340|3104]driver_media_session.cpp:89 GetLocalParam: get local param, this= 0x29fbfa1c080
+[2024-12-13 18:01:30.839] [PSS] [info] [5340|3104]media_session_impl.cpp:40 GetLocalParam: get local param, session_id= hLwErsTMYZYlzuvb, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= TCxFGVMCvvLIPqkF},, this= 0x29fcc537400
+[2024-12-13 18:01:30.839] [PSS] [debug] [5340|3104]driver_rpc.cpp:124 CreateSessionToService: generate session_id= hLwErsTMYZYlzuvb, this= 0x2a01ccb7c90
+[2024-12-13 18:01:30.839] [PSS] [debug] [5340|3104]driver_rpc.cpp:139 CreateSessionToService: create session, req= session_param { session_id: "hLwErsTMYZYlzuvb" description: "StreamingSceneRender" connection_type: kConnectionTcp event_streams { stream_id: "TCxFGVMCvvLIPqkF" connection_config { connection_type: kConnectionTcp direction: kSendAndReceive channel: 1 } } }, this= 0x2a01ccb7c90
+[2024-12-13 18:01:30.840] [PSS] [debug] [5340|3104]streaming_driver_interface_impl.cpp:793 CreateMediaSession: creating session, session_id= hLwErsTMYZYlzuvb, this= 0x29fbf957570
+[2024-12-13 18:01:30.840] [PSS] [debug] [5340|3104]driver_rpc.cpp:311 HandleCreateSessionResp: create session result= 0, this= 0x2a01ccb7c90
+[2024-12-13 18:01:30.841] [PSS] [debug] [5340|3104]driver_rpc.cpp:233 UpdateSessionState: service update session state, request_id= 5361, request_msg= session_state: kSessionStateReady session_param { session_id: "hLwErsTMYZYlzuvb" description: "StreamingSceneRender" connection_type: kConnectionTcp event_streams { stream_id: "TCxFGVMCvvLIPqkF" connection_config { connection_type: kConnectionTcp direction: kSendAndReceive channel: 1 } } }, this= 0x2a01ccb7c90
+[2024-12-13 18:01:30.841] [PSS] [debug] [5340|3104]streaming_driver_interface_impl.cpp:323 NotifyServiceUpdateSessionState: state= 2, this= 0x29fbf957570
+[2024-12-13 18:01:30.841] [PSS] [debug] [5340|3104]driver_media_session.cpp:100 UpdateSessionState: state= 2, param 000002A0B6E85D30, this= 0x29fbfa1c080
+[2024-12-13 18:01:30.841] [PSS] [info] [5340|3104]media_session_impl.cpp:44 SetRemoteParam: set remote param session_id= hLwErsTMYZYlzuvb, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= TCxFGVMCvvLIPqkF},, this= 0x29fcc537400
+[2024-12-13 18:01:30.841] [PSS] [debug] [5340|3104]media_session_impl.cpp:543 NegotiateParam: input remote param session_id= hLwErsTMYZYlzuvb, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= TCxFGVMCvvLIPqkF},, this= 0x29fcc537400
+[2024-12-13 18:01:30.841] [PSS] [debug] [5340|3104]media_session_impl.cpp:545 NegotiateParam: input local param session_id= hLwErsTMYZYlzuvb, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= TCxFGVMCvvLIPqkF},, this= 0x29fcc537400
+[2024-12-13 18:01:30.841] [PSS] [debug] [5340|3104]media_session_impl.cpp:632 NegotiateParam: output local param session_id= hLwErsTMYZYlzuvb, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= TCxFGVMCvvLIPqkF},, this= 0x29fcc537400
+[2024-12-13 18:01:30.841] [PSS] [debug] [5340|3104]media_session_impl.cpp:285 UpdateStream: update stream session_id= hLwErsTMYZYlzuvb, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= TCxFGVMCvvLIPqkF},, this= 0x29fcc537400
+[2024-12-13 18:01:30.841] [PSS] [debug] [5340|3104]media_session_impl.cpp:506 UpdateEventStream: event stream existed, reset it, this= 0x29fcc537400
+[2024-12-13 18:01:30.841] [PSS] [debug] [5340|3104]event_stream_impl.cpp:27 Reset: reset event stream= TCxFGVMCvvLIPqkF, this= 0x2a0b5dc4390
+[2024-12-13 18:01:30.841] [PSS] [debug] [5340|3104]media_transport.cpp:31 Reset: reset media_transport, this= 0x29f9cc308b0
+[2024-12-13 18:01:30.841] [PSS] [debug] [5340|3104]media_transport.cpp:20 Init: try to add channel to external_transport,channel= 1, this= 0x29f9cc30fd0
+[2024-12-13 18:01:30.841] [PSS] [debug] [5340|3104]streaming_driver_interface_impl.cpp:435 AddMediaDataCallback: add transport channel= 1,callback= 0x29f9cc30fd0, this= 0x29fbf957570
+[2024-12-13 18:01:30.841] [PSS] [debug] [5340|3104]media_transport.cpp:27 Init: init media_transport success, this= 0x29f9cc30fd0
+[2024-12-13 18:01:30.841] [PSS] [info] [5340|3104]event_stream_impl.cpp:16 Init: event stream stream_id= TCxFGVMCvvLIPqkF, this= 0x2a0b5dc4390
+[2024-12-13 18:01:30.841] [PSS] [debug] [5340|3104]event_stream_impl.cpp:23 Init: init event stream success, this= 0x2a0b5dc4390
+[2024-12-13 18:01:30.841] [PSS] [debug] [5340|3104]event_stream_impl.cpp:106 SetMediaTransport: set media_transport to event stream, this= 0x2a0b5dc4390
+[2024-12-13 18:01:30.841] [PSS] [debug] [5340|3104]media_transport.cpp:55 AddMediaDataCallback: callback= 0x2a0b5dc43a8, this= 0x29f9cc30fd0
+[2024-12-13 18:01:30.841] [PSS] [debug] [5340|3104]media_session_impl.cpp:537 UpdateEventStream: update event stream success, stream_id= TCxFGVMCvvLIPqkF, this= 0x29fcc537400
+[2024-12-13 18:01:30.841] [PSS] [debug] [5340|3104]media_session_impl.cpp:337 UpdateStream: update stream success, this= 0x29fcc537400
+[2024-12-13 18:01:30.841] [PSS] [debug] [5340|3104]media_session_impl.cpp:63 SetRemoteParam: set remote param success, this= 0x29fcc537400
+[2024-12-13 18:01:30.841] [PSS] [info] [5340|3104]media_session_impl.cpp:206 Start: start session, session_id= hLwErsTMYZYlzuvb, this= 0x29fcc537400
+[2024-12-13 18:01:30.841] [PSS] [debug] [5340|3104]media_session_impl.cpp:230 Start: start video_receive stream, this= 0x29fcc537400
+[2024-12-13 18:01:30.841] [PSS] [debug] [5340|3104]event_stream_impl.cpp:43 Start: stream_id= TCxFGVMCvvLIPqkF, this= 0x2a0b5dc4390
+[2024-12-13 18:01:30.841] [PSS] [debug] [5340|3104]media_session_impl.cpp:238 Start: start session success, session_id= hLwErsTMYZYlzuvb, this= 0x29fcc537400
+[2024-12-13 18:01:30.841] [PSS] [debug] [5340|3104]driver_media_session.cpp:133 UpdateSessionState: update session config success, this= 0x29fbfa1c080
+[2024-12-13 18:01:30.841] [PSS] [debug] [5340|3104]streaming_driver_interface_impl.cpp:341 NotifyServiceUpdateSessionState: session is ready, report connect success, this= 0x29fbf957570
+[2024-12-13 18:01:30.841] [PSS] [debug] [5340|15780]streaming_driver_interface_impl.cpp:719 HandleUpdateRenderState: state_type: kStateTypePrepared device_info { device_id: "hmd_CTs4D1e4" device_name: "StreamingServiceAndroid" }, this= 0x29fbf957570
+[2024-12-13 18:01:30.842] [PSS] [info] [5340|15780]streaming_driver_interface_impl.cpp:57 StartStreaming: (1920,1920), fps= 72, this= 0x29fbf957570
+[2024-12-13 18:01:30.842] [PSS] [debug] [5340|3104]streaming_driver_interface_impl.cpp:522 InvokeStartStreaming: send start event to service, this= 0x29fbf957570
+[2024-12-13 18:01:31.216] [PSS] [debug] [5340|15780]streaming_driver_interface_impl.cpp:719 HandleUpdateRenderState: state_type: kStateTypeStarted, this= 0x29fbf957570
+[2024-12-13 18:01:31.216] [PSS] [debug] [5340|15780]streaming_driver_interface_impl.cpp:171 StartHandTracking: start hand tracking, this= 0x29fbf957570
+[2024-12-13 18:01:31.216] [PSS] [error] [5340|15780]streaming_driver_interface_impl.cpp:190 RequestHandTrackingData: "hand_tracking not started", !hand_tracking_flag_, this= 0x29fbf957570
+[2024-12-13 18:01:58.406] [PSS] [info] [5340|6112]streaming_driver_interface_impl.cpp:67 StopStreaming: stop streaming, this= 0x29fbf957570
+[2024-12-13 18:01:58.406] [PSS] [debug] [5340|6112]streaming_driver_interface_impl.cpp:180 StopHandTracking: stop hand tracking, this= 0x29fbf957570
+[2024-12-13 18:01:58.406] [PSS] [debug] [5340|3104]streaming_driver_interface_impl.cpp:534 InvokeStopStreaming: stop streaming, state= 2, this= 0x29fbf957570
+[2024-12-13 18:01:58.406] [PSS] [error] [5340|3104]streaming_driver_interface_impl.cpp:584 InvokeChangeHandTrackingState: "streaming not started", streaming_state_ != StreamingState::kStreamingReady, this= 0x29fbf957570
+[2024-12-13 18:01:58.407] [PSS] [debug] [5340|3104]streaming_driver_interface_impl.cpp:503 InvokeDisconnectFromService: disconnect from service, this= 0x29fbf957570
+[2024-12-13 18:01:58.407] [PSS] [debug] [5340|3104]driver_media_session.cpp:68 Reset: reset client session, this= 0x29fbfa1c080
+[2024-12-13 18:01:58.407] [PSS] [info] [5340|3104]media_session_impl.cpp:258 Stop: stop session, session_id= hLwErsTMYZYlzuvb, this= 0x29fcc537400
+[2024-12-13 18:01:58.407] [PSS] [debug] [5340|3104]event_stream_impl.cpp:49 Stop: stream_id= TCxFGVMCvvLIPqkF, this= 0x2a0b5dc4390
+[2024-12-13 18:01:58.407] [PSS] [debug] [5340|3104]media_session_impl.cpp:281 Stop: stop session success, session_id= hLwErsTMYZYlzuvb, this= 0x29fcc537400
+[2024-12-13 18:01:58.407] [PSS] [debug] [5340|3104]event_stream_impl.cpp:27 Reset: reset event stream= TCxFGVMCvvLIPqkF, this= 0x2a0b5dc4390
+[2024-12-13 18:01:58.407] [PSS] [debug] [5340|3104]media_transport.cpp:31 Reset: reset media_transport, this= 0x29f9cc30fd0
+[2024-12-13 18:01:58.407] [PSS] [debug] [5340|3104]driver_media_session.cpp:78 Reset: reset client session success, this= 0x29fbfa1c080
+[2024-12-13 18:01:58.407] [PSS] [debug] [5340|3104]driver_media_session.cpp:68 Reset: reset client session, this= 0x29fbfa1c080
+[2024-12-13 18:01:58.407] [PSS] [debug] [5340|3104]driver_media_session.cpp:78 Reset: reset client session success, this= 0x29fbfa1c080
+[2024-12-13 18:01:58.408] [PSS] [debug] [5340|3104]driver_rpc.cpp:109 DisconnectFromService: disconnect from service, request_id= 2req = client_id: "x22N7RVWAczCMpBV", this= 0x2a01ccb7c90
+[2024-12-13 18:01:58.508] [PSS] [debug] [5340|3104]driver_rpc.cpp:294 HandleDisconnectFromServiceResp: disconnect from service result= -5, this= 0x2a01ccb7c90
+[2024-12-13 18:01:58.508] [PSS] [error] [5340|3104]driver_rpc.cpp:299 HandleDisconnectFromServiceResp: rpc error, this= 0x2a01ccb7c90
+[2024-12-13 18:01:58.508] [PSS] [debug] [5340|3104]streaming_driver_interface_impl.cpp:287 NotifyDisconnectFromServiceResult: disconnect from service result= -5, this= 0x29fbf957570
+[2024-12-13 18:01:58.524] [PSS] [error] [5340|3104]rpc.cpp:283 HandleReceiveData: "response cannot find correspond request,", iter == inflight_requests_.end(), this= 0x2a097972970
+[2024-12-13 18:01:58.524] [PSS] [error] [5340|20060]transport_client_tcp2.cpp:176 HandleReceiveDataResult: receive error= 10054, msg= 远程主机强迫关闭了一个现有的连接。
+[2024-12-13 18:01:58.524] [PSS] [error] [5340|20060]transport_client_tcp2.cpp:180 HandleReceiveDataResult: has been disconnected, this= 0x29fc164d720
+[2024-12-13 18:01:58.524] [PSS] [debug] [5340|3104]streaming_driver_interface_impl.cpp:699 HandleNetworkDisconnect: handle network disconnect,reason= 10054, this= 0x29fbf957570
+[2024-12-14 11:12:22.464] [PSS] [info] ***********  Log Begin **********
+[2024-12-14 11:12:22.464] [PSS] [info] process id= 3568
+[2024-12-14 11:12:22.464] [PSS] [debug] [3568|6464]streaming_driver_interface_impl.cpp:25 StreamingDriverInterfaceImpl: callback= 0x13bade3a950, this= 0x13979045040
+[2024-12-14 11:12:22.464] [PSS] [debug] [3568|6464]streaming_driver_interface_impl.cpp:95 SetTrackingOrigin: tracking origin= Undefined, this= 0x13979045040
+[2024-12-14 11:12:22.465] [PSS] [debug] [3568|6464]streaming_driver_interface_impl.cpp:39 ConnectToService: try to connect to service, this= 0x13979045040
+[2024-12-14 11:12:22.465] [PSS] [error] [3568|18828]streaming_driver_interface_impl.cpp:572 InvokeSetTrackingOrigin: "invalid media session", !media_session_, this= 0x13979045040
+[2024-12-14 11:12:22.465] [PSS] [debug] [3568|18828]streaming_driver_interface_impl.cpp:469 InvokeConnectToService: connect to service through the network, port= 54000, this= 0x13979045040
+[2024-12-14 11:12:22.466] [PSS] [debug] [3568|18828]transport_client_tcp2.cpp:34 Start: buffer size(send\recv): 1048576\1048576, this= 0x13bfd7561e0
+[2024-12-14 11:12:22.466] [PSS] [info] [3568|18828]transport_client_tcp2.cpp:58 Start: server= 127.0.0.1:54000, local=0.0.0.0:0, this= 0x13bfd7561e0
+[2024-12-14 11:12:22.466] [PSS] [debug] [3568|18828]transport_data_receiver_raw.cpp:34 UpdateConfig: enable_channel= 1, enable_packet= 1, sink= 0x13bfd7561f0, this= 0x13bfdcc5b20
+[2024-12-14 11:12:22.466] [PSS] [debug] [3568|14528]streaming_driver_interface_impl.cpp:248 NotifyConnectResult: network connect to service result= 0, this= 0x13979045040
+[2024-12-14 11:12:22.466] [PSS] [debug] [3568|14528]transport_client_tcp2.cpp:120 HandleConnect: local= 127.0.0.1:59567, this= 0x13bfd7561e0
+[2024-12-14 11:12:22.466] [PSS] [debug] [3568|18828]streaming_driver_interface_impl.cpp:482 InvokeConnectToServiceByRpc: begin to connect to service by rpc, this= 0x13979045040
+[2024-12-14 11:12:22.471] [PSS] [debug] [3568|18828]driver_rpc.cpp:87 ConnectToService: connect to service, request_id= 0, req = client_id: "MCNuL3HfvTSOmI7u" client_name: "StreamingDriverSDK" client_version: "2.0.2.11" client_description: "StreamingSceneRender", this= 0x13bfdbd4180
+[2024-12-14 11:12:22.471] [PSS] [debug] [3568|18828]streaming_driver_interface_impl.cpp:499 InvokeConnectToServiceByRpc: connecting to service by rpc, local client_id= MCNuL3HfvTSOmI7u, this= 0x13979045040
+[2024-12-14 11:12:22.471] [PSS] [debug] [3568|18828]driver_rpc.cpp:277 HandleConnectToServiceResp: connect to service result= 0, this= 0x13bfdbd4180
+[2024-12-14 11:12:22.471] [PSS] [debug] [3568|18828]streaming_driver_interface_impl.cpp:270 NotifyConnectToServiceResult: connect to service result= 0, this= 0x13979045040
+[2024-12-14 11:12:22.471] [PSS] [debug] [3568|18828]streaming_driver_interface_impl.cpp:753 CreateMediaSession: try to create session, this= 0x13979045040
+[2024-12-14 11:12:22.471] [PSS] [debug] [3568|18828]driver_media_session.cpp:16 DriverMediaSession: session_id= iWfgYnqlFouDckBz, this= 0x13bfda8a5a0
+[2024-12-14 11:12:22.471] [PSS] [debug] [3568|18828]driver_media_session.cpp:28 Init: init media session, role= 0 session_id= iWfgYnqlFouDckBz, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= AnTVxRIvgvweQNiJ},, this= 0x13bfda8a5a0
+[2024-12-14 11:12:22.471] [PSS] [info] [3568|18828]media_session_impl.cpp:16 SetLocalParam: set local param session_id= iWfgYnqlFouDckBz, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= AnTVxRIvgvweQNiJ},, this= 0x13c32a4d110
+[2024-12-14 11:12:22.472] [PSS] [debug] [3568|18828]media_session_impl.cpp:285 UpdateStream: update stream session_id= iWfgYnqlFouDckBz, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= AnTVxRIvgvweQNiJ},, this= 0x13c32a4d110
+[2024-12-14 11:12:22.472] [PSS] [debug] [3568|18828]media_transport.cpp:20 Init: try to add channel to external_transport,channel= 1, this= 0x139789fc400
+[2024-12-14 11:12:22.472] [PSS] [debug] [3568|18828]streaming_driver_interface_impl.cpp:435 AddMediaDataCallback: add transport channel= 1,callback= 0x139789fc400, this= 0x13979045040
+[2024-12-14 11:12:22.472] [PSS] [debug] [3568|18828]media_transport.cpp:27 Init: init media_transport success, this= 0x139789fc400
+[2024-12-14 11:12:22.472] [PSS] [info] [3568|18828]event_stream_impl.cpp:16 Init: event stream stream_id= AnTVxRIvgvweQNiJ, this= 0x13bfdbd5980
+[2024-12-14 11:12:22.472] [PSS] [debug] [3568|18828]event_stream_impl.cpp:23 Init: init event stream success, this= 0x13bfdbd5980
+[2024-12-14 11:12:22.472] [PSS] [debug] [3568|18828]event_stream_impl.cpp:106 SetMediaTransport: set media_transport to event stream, this= 0x13bfdbd5980
+[2024-12-14 11:12:22.472] [PSS] [debug] [3568|18828]media_transport.cpp:55 AddMediaDataCallback: callback= 0x13bfdbd5998, this= 0x139789fc400
+[2024-12-14 11:12:22.472] [PSS] [debug] [3568|18828]media_session_impl.cpp:537 UpdateEventStream: update event stream success, stream_id= AnTVxRIvgvweQNiJ, this= 0x13c32a4d110
+[2024-12-14 11:12:22.472] [PSS] [debug] [3568|18828]media_session_impl.cpp:337 UpdateStream: update stream success, this= 0x13c32a4d110
+[2024-12-14 11:12:22.472] [PSS] [debug] [3568|18828]media_session_impl.cpp:30 SetLocalParam: set local param success, this= 0x13c32a4d110
+[2024-12-14 11:12:22.472] [PSS] [info] [3568|18828]media_session_impl.cpp:177 GetEventStream: stream_id= AnTVxRIvgvweQNiJ, this= 0x13c32a4d110
+[2024-12-14 11:12:22.472] [PSS] [debug] [3568|18828]driver_media_session.cpp:64 Init: init media session success, this= 0x13bfda8a5a0
+[2024-12-14 11:12:22.472] [PSS] [debug] [3568|18828]driver_media_session.cpp:89 GetLocalParam: get local param, this= 0x13bfda8a5a0
+[2024-12-14 11:12:22.473] [PSS] [info] [3568|18828]media_session_impl.cpp:40 GetLocalParam: get local param, session_id= iWfgYnqlFouDckBz, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= AnTVxRIvgvweQNiJ},, this= 0x13c32a4d110
+[2024-12-14 11:12:22.473] [PSS] [debug] [3568|18828]driver_rpc.cpp:124 CreateSessionToService: generate session_id= iWfgYnqlFouDckBz, this= 0x13bfdbd4180
+[2024-12-14 11:12:22.473] [PSS] [debug] [3568|18828]driver_rpc.cpp:139 CreateSessionToService: create session, req= session_param { session_id: "iWfgYnqlFouDckBz" description: "StreamingSceneRender" connection_type: kConnectionTcp event_streams { stream_id: "AnTVxRIvgvweQNiJ" connection_config { connection_type: kConnectionTcp direction: kSendAndReceive channel: 1 } } }, this= 0x13bfdbd4180
+[2024-12-14 11:12:22.473] [PSS] [debug] [3568|18828]streaming_driver_interface_impl.cpp:793 CreateMediaSession: creating session, session_id= iWfgYnqlFouDckBz, this= 0x13979045040
+[2024-12-14 11:12:22.473] [PSS] [debug] [3568|18828]driver_rpc.cpp:311 HandleCreateSessionResp: create session result= 0, this= 0x13bfdbd4180
+[2024-12-14 11:12:22.474] [PSS] [debug] [3568|18828]driver_rpc.cpp:233 UpdateSessionState: service update session state, request_id= 1744, request_msg= session_state: kSessionStateReady session_param { session_id: "iWfgYnqlFouDckBz" description: "StreamingSceneRender" connection_type: kConnectionTcp event_streams { stream_id: "AnTVxRIvgvweQNiJ" connection_config { connection_type: kConnectionTcp direction: kSendAndReceive channel: 1 } } }, this= 0x13bfdbd4180
+[2024-12-14 11:12:22.474] [PSS] [debug] [3568|18828]streaming_driver_interface_impl.cpp:323 NotifyServiceUpdateSessionState: state= 2, this= 0x13979045040
+[2024-12-14 11:12:22.474] [PSS] [debug] [3568|18828]driver_media_session.cpp:100 UpdateSessionState: state= 2, param 0000013C0D78F090, this= 0x13bfda8a5a0
+[2024-12-14 11:12:22.474] [PSS] [info] [3568|18828]media_session_impl.cpp:44 SetRemoteParam: set remote param session_id= iWfgYnqlFouDckBz, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= AnTVxRIvgvweQNiJ},, this= 0x13c32a4d110
+[2024-12-14 11:12:22.474] [PSS] [debug] [3568|18828]media_session_impl.cpp:543 NegotiateParam: input remote param session_id= iWfgYnqlFouDckBz, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= AnTVxRIvgvweQNiJ},, this= 0x13c32a4d110
+[2024-12-14 11:12:22.474] [PSS] [debug] [3568|18828]media_session_impl.cpp:545 NegotiateParam: input local param session_id= iWfgYnqlFouDckBz, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= AnTVxRIvgvweQNiJ},, this= 0x13c32a4d110
+[2024-12-14 11:12:22.474] [PSS] [debug] [3568|18828]media_session_impl.cpp:632 NegotiateParam: output local param session_id= iWfgYnqlFouDckBz, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= AnTVxRIvgvweQNiJ},, this= 0x13c32a4d110
+[2024-12-14 11:12:22.474] [PSS] [debug] [3568|18828]media_session_impl.cpp:285 UpdateStream: update stream session_id= iWfgYnqlFouDckBz, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= AnTVxRIvgvweQNiJ},, this= 0x13c32a4d110
+[2024-12-14 11:12:22.474] [PSS] [debug] [3568|18828]media_session_impl.cpp:506 UpdateEventStream: event stream existed, reset it, this= 0x13c32a4d110
+[2024-12-14 11:12:22.474] [PSS] [debug] [3568|18828]event_stream_impl.cpp:27 Reset: reset event stream= AnTVxRIvgvweQNiJ, this= 0x13bfdbd5980
+[2024-12-14 11:12:22.474] [PSS] [debug] [3568|18828]media_transport.cpp:31 Reset: reset media_transport, this= 0x139789fc400
+[2024-12-14 11:12:22.474] [PSS] [debug] [3568|18828]media_transport.cpp:20 Init: try to add channel to external_transport,channel= 1, this= 0x139789fcc50
+[2024-12-14 11:12:22.474] [PSS] [debug] [3568|18828]streaming_driver_interface_impl.cpp:435 AddMediaDataCallback: add transport channel= 1,callback= 0x139789fcc50, this= 0x13979045040
+[2024-12-14 11:12:22.474] [PSS] [debug] [3568|18828]media_transport.cpp:27 Init: init media_transport success, this= 0x139789fcc50
+[2024-12-14 11:12:22.474] [PSS] [info] [3568|18828]event_stream_impl.cpp:16 Init: event stream stream_id= AnTVxRIvgvweQNiJ, this= 0x13bfdbd5980
+[2024-12-14 11:12:22.474] [PSS] [debug] [3568|18828]event_stream_impl.cpp:23 Init: init event stream success, this= 0x13bfdbd5980
+[2024-12-14 11:12:22.474] [PSS] [debug] [3568|18828]event_stream_impl.cpp:106 SetMediaTransport: set media_transport to event stream, this= 0x13bfdbd5980
+[2024-12-14 11:12:22.474] [PSS] [debug] [3568|18828]media_transport.cpp:55 AddMediaDataCallback: callback= 0x13bfdbd5998, this= 0x139789fcc50
+[2024-12-14 11:12:22.474] [PSS] [debug] [3568|18828]media_session_impl.cpp:537 UpdateEventStream: update event stream success, stream_id= AnTVxRIvgvweQNiJ, this= 0x13c32a4d110
+[2024-12-14 11:12:22.474] [PSS] [debug] [3568|18828]media_session_impl.cpp:337 UpdateStream: update stream success, this= 0x13c32a4d110
+[2024-12-14 11:12:22.474] [PSS] [debug] [3568|18828]media_session_impl.cpp:63 SetRemoteParam: set remote param success, this= 0x13c32a4d110
+[2024-12-14 11:12:22.474] [PSS] [info] [3568|18828]media_session_impl.cpp:206 Start: start session, session_id= iWfgYnqlFouDckBz, this= 0x13c32a4d110
+[2024-12-14 11:12:22.474] [PSS] [debug] [3568|18828]media_session_impl.cpp:230 Start: start video_receive stream, this= 0x13c32a4d110
+[2024-12-14 11:12:22.474] [PSS] [debug] [3568|18828]event_stream_impl.cpp:43 Start: stream_id= AnTVxRIvgvweQNiJ, this= 0x13bfdbd5980
+[2024-12-14 11:12:22.474] [PSS] [debug] [3568|18828]media_session_impl.cpp:238 Start: start session success, session_id= iWfgYnqlFouDckBz, this= 0x13c32a4d110
+[2024-12-14 11:12:22.474] [PSS] [debug] [3568|18828]driver_media_session.cpp:133 UpdateSessionState: update session config success, this= 0x13bfda8a5a0
+[2024-12-14 11:12:22.474] [PSS] [debug] [3568|18828]streaming_driver_interface_impl.cpp:341 NotifyServiceUpdateSessionState: session is ready, report connect success, this= 0x13979045040
+[2024-12-14 11:12:22.476] [PSS] [debug] [3568|19272]streaming_driver_interface_impl.cpp:719 HandleUpdateRenderState: state_type: kStateTypePrepared device_info { device_id: "hmd_zQTPt61O" device_name: "StreamingServiceAndroid" }, this= 0x13979045040
+[2024-12-14 11:12:22.476] [PSS] [info] [3568|19272]streaming_driver_interface_impl.cpp:57 StartStreaming: (1920,1920), fps= 72, this= 0x13979045040
+[2024-12-14 11:12:22.477] [PSS] [debug] [3568|18828]streaming_driver_interface_impl.cpp:522 InvokeStartStreaming: send start event to service, this= 0x13979045040
+[2024-12-14 11:12:23.157] [PSS] [debug] [3568|19272]streaming_driver_interface_impl.cpp:719 HandleUpdateRenderState: state_type: kStateTypeStarted, this= 0x13979045040
+[2024-12-14 11:12:23.157] [PSS] [debug] [3568|19272]streaming_driver_interface_impl.cpp:171 StartHandTracking: start hand tracking, this= 0x13979045040
+[2024-12-14 11:12:23.157] [PSS] [error] [3568|19272]streaming_driver_interface_impl.cpp:190 RequestHandTrackingData: "hand_tracking not started", !hand_tracking_flag_, this= 0x13979045040
+[2024-12-14 11:13:43.996] [PSS] [info] [3568|6464]streaming_driver_interface_impl.cpp:67 StopStreaming: stop streaming, this= 0x13979045040
+[2024-12-14 11:13:43.996] [PSS] [debug] [3568|6464]streaming_driver_interface_impl.cpp:180 StopHandTracking: stop hand tracking, this= 0x13979045040
+[2024-12-14 11:13:43.996] [PSS] [debug] [3568|18828]streaming_driver_interface_impl.cpp:534 InvokeStopStreaming: stop streaming, state= 2, this= 0x13979045040
+[2024-12-14 11:13:43.996] [PSS] [error] [3568|18828]streaming_driver_interface_impl.cpp:584 InvokeChangeHandTrackingState: "streaming not started", streaming_state_ != StreamingState::kStreamingReady, this= 0x13979045040
+[2024-12-14 11:13:43.997] [PSS] [debug] [3568|18828]streaming_driver_interface_impl.cpp:503 InvokeDisconnectFromService: disconnect from service, this= 0x13979045040
+[2024-12-14 11:13:43.997] [PSS] [debug] [3568|18828]driver_media_session.cpp:68 Reset: reset client session, this= 0x13bfda8a5a0
+[2024-12-14 11:13:43.997] [PSS] [info] [3568|18828]media_session_impl.cpp:258 Stop: stop session, session_id= iWfgYnqlFouDckBz, this= 0x13c32a4d110
+[2024-12-14 11:13:43.997] [PSS] [debug] [3568|18828]event_stream_impl.cpp:49 Stop: stream_id= AnTVxRIvgvweQNiJ, this= 0x13bfdbd5980
+[2024-12-14 11:13:43.997] [PSS] [debug] [3568|18828]media_session_impl.cpp:281 Stop: stop session success, session_id= iWfgYnqlFouDckBz, this= 0x13c32a4d110
+[2024-12-14 11:13:43.998] [PSS] [debug] [3568|18828]event_stream_impl.cpp:27 Reset: reset event stream= AnTVxRIvgvweQNiJ, this= 0x13bfdbd5980
+[2024-12-14 11:13:43.998] [PSS] [debug] [3568|18828]media_transport.cpp:31 Reset: reset media_transport, this= 0x139789fcc50
+[2024-12-14 11:13:43.998] [PSS] [debug] [3568|18828]driver_media_session.cpp:78 Reset: reset client session success, this= 0x13bfda8a5a0
+[2024-12-14 11:13:43.998] [PSS] [debug] [3568|18828]driver_media_session.cpp:68 Reset: reset client session, this= 0x13bfda8a5a0
+[2024-12-14 11:13:43.998] [PSS] [debug] [3568|18828]driver_media_session.cpp:78 Reset: reset client session success, this= 0x13bfda8a5a0
+[2024-12-14 11:13:43.999] [PSS] [debug] [3568|18828]driver_rpc.cpp:109 DisconnectFromService: disconnect from service, request_id= 2req = client_id: "MCNuL3HfvTSOmI7u", this= 0x13bfdbd4180
+[2024-12-14 11:13:44.099] [PSS] [debug] [3568|18828]driver_rpc.cpp:294 HandleDisconnectFromServiceResp: disconnect from service result= -5, this= 0x13bfdbd4180
+[2024-12-14 11:13:44.099] [PSS] [error] [3568|18828]driver_rpc.cpp:299 HandleDisconnectFromServiceResp: rpc error, this= 0x13bfdbd4180
+[2024-12-14 11:13:44.099] [PSS] [debug] [3568|18828]streaming_driver_interface_impl.cpp:287 NotifyDisconnectFromServiceResult: disconnect from service result= -5, this= 0x13979045040
+[2024-12-14 11:13:44.231] [PSS] [error] [3568|18828]rpc.cpp:283 HandleReceiveData: "response cannot find correspond request,", iter == inflight_requests_.end(), this= 0x1397870e750
+[2024-12-14 11:13:44.231] [PSS] [error] [3568|14528]transport_client_tcp2.cpp:176 HandleReceiveDataResult: receive error= 10054, msg= 远程主机强迫关闭了一个现有的连接。
+[2024-12-14 11:13:44.231] [PSS] [error] [3568|14528]transport_client_tcp2.cpp:180 HandleReceiveDataResult: has been disconnected, this= 0x13bfd7561e0
+[2024-12-14 11:13:44.231] [PSS] [debug] [3568|18828]streaming_driver_interface_impl.cpp:699 HandleNetworkDisconnect: handle network disconnect,reason= 10054, this= 0x13979045040
+[2024-12-14 11:14:44.953] [PSS] [debug] [3568|6464]streaming_driver_interface_impl.cpp:25 StreamingDriverInterfaceImpl: callback= 0x13c43340840, this= 0x1397a1b2880
+[2024-12-14 11:14:44.953] [PSS] [debug] [3568|6464]streaming_driver_interface_impl.cpp:30 ~StreamingDriverInterfaceImpl: called, this= 0x13979045040
+[2024-12-14 11:14:44.953] [PSS] [debug] [3568|6464]transport_client_tcp2.cpp:71 Stop: called, this= 0x13bfd7561e0
+[2024-12-14 11:14:44.954] [PSS] [debug] [3568|6464]streaming_driver_interface_impl.cpp:95 SetTrackingOrigin: tracking origin= FloorLevel, this= 0x1397a1b2880
+[2024-12-14 11:14:44.954] [PSS] [debug] [3568|6464]streaming_driver_interface_impl.cpp:39 ConnectToService: try to connect to service, this= 0x1397a1b2880
+[2024-12-14 11:14:44.954] [PSS] [error] [3568|10080]streaming_driver_interface_impl.cpp:572 InvokeSetTrackingOrigin: "invalid media session", !media_session_, this= 0x1397a1b2880
+[2024-12-14 11:14:44.954] [PSS] [debug] [3568|10080]streaming_driver_interface_impl.cpp:469 InvokeConnectToService: connect to service through the network, port= 54000, this= 0x1397a1b2880
+[2024-12-14 11:14:44.954] [PSS] [debug] [3568|10080]transport_client_tcp2.cpp:34 Start: buffer size(send\recv): 1048576\1048576, this= 0x13bfd746250
+[2024-12-14 11:14:44.954] [PSS] [info] [3568|10080]transport_client_tcp2.cpp:58 Start: server= 127.0.0.1:54000, local=0.0.0.0:0, this= 0x13bfd746250
+[2024-12-14 11:14:44.954] [PSS] [debug] [3568|10080]transport_data_receiver_raw.cpp:34 UpdateConfig: enable_channel= 1, enable_packet= 1, sink= 0x13bfd746260, this= 0x13976733650
+[2024-12-14 11:14:44.954] [PSS] [debug] [3568|13920]streaming_driver_interface_impl.cpp:248 NotifyConnectResult: network connect to service result= 0, this= 0x1397a1b2880
+[2024-12-14 11:14:44.954] [PSS] [debug] [3568|10080]streaming_driver_interface_impl.cpp:482 InvokeConnectToServiceByRpc: begin to connect to service by rpc, this= 0x1397a1b2880
+[2024-12-14 11:14:44.954] [PSS] [debug] [3568|13920]transport_client_tcp2.cpp:120 HandleConnect: local= 127.0.0.1:64248, this= 0x13bfd746250
+[2024-12-14 11:14:44.954] [PSS] [debug] [3568|10080]driver_rpc.cpp:87 ConnectToService: connect to service, request_id= 0, req = client_id: "kNWGr58eRx2biWzA" client_name: "StreamingDriverSDK" client_version: "2.0.2.11" client_description: "StreamingSceneRender", this= 0x13bfdbd0480
+[2024-12-14 11:14:44.954] [PSS] [debug] [3568|10080]streaming_driver_interface_impl.cpp:499 InvokeConnectToServiceByRpc: connecting to service by rpc, local client_id= kNWGr58eRx2biWzA, this= 0x1397a1b2880
+[2024-12-14 11:14:44.955] [PSS] [debug] [3568|10080]driver_rpc.cpp:277 HandleConnectToServiceResp: connect to service result= 0, this= 0x13bfdbd0480
+[2024-12-14 11:14:44.955] [PSS] [debug] [3568|10080]streaming_driver_interface_impl.cpp:270 NotifyConnectToServiceResult: connect to service result= 0, this= 0x1397a1b2880
+[2024-12-14 11:14:44.955] [PSS] [debug] [3568|10080]streaming_driver_interface_impl.cpp:753 CreateMediaSession: try to create session, this= 0x1397a1b2880
+[2024-12-14 11:14:44.955] [PSS] [debug] [3568|10080]driver_media_session.cpp:16 DriverMediaSession: session_id= eFpFkFAbKjQlplEa, this= 0x13b473e12a0
+[2024-12-14 11:14:44.955] [PSS] [debug] [3568|10080]driver_media_session.cpp:28 Init: init media session, role= 0 session_id= eFpFkFAbKjQlplEa, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= YzTXKUeLRUDQOGSJ},, this= 0x13b473e12a0
+[2024-12-14 11:14:44.955] [PSS] [info] [3568|10080]media_session_impl.cpp:16 SetLocalParam: set local param session_id= eFpFkFAbKjQlplEa, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= YzTXKUeLRUDQOGSJ},, this= 0x13c32a4dab0
+[2024-12-14 11:14:44.955] [PSS] [debug] [3568|10080]media_session_impl.cpp:285 UpdateStream: update stream session_id= eFpFkFAbKjQlplEa, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= YzTXKUeLRUDQOGSJ},, this= 0x13c32a4dab0
+[2024-12-14 11:14:44.955] [PSS] [debug] [3568|10080]media_transport.cpp:20 Init: try to add channel to external_transport,channel= 1, this= 0x13c324648c0
+[2024-12-14 11:14:44.955] [PSS] [debug] [3568|10080]streaming_driver_interface_impl.cpp:435 AddMediaDataCallback: add transport channel= 1,callback= 0x13c324648c0, this= 0x1397a1b2880
+[2024-12-14 11:14:44.955] [PSS] [debug] [3568|10080]media_transport.cpp:27 Init: init media_transport success, this= 0x13c324648c0
+[2024-12-14 11:14:44.955] [PSS] [info] [3568|10080]event_stream_impl.cpp:16 Init: event stream stream_id= YzTXKUeLRUDQOGSJ, this= 0x13bfdbc7980
+[2024-12-14 11:14:44.955] [PSS] [debug] [3568|10080]event_stream_impl.cpp:23 Init: init event stream success, this= 0x13bfdbc7980
+[2024-12-14 11:14:44.955] [PSS] [debug] [3568|10080]event_stream_impl.cpp:106 SetMediaTransport: set media_transport to event stream, this= 0x13bfdbc7980
+[2024-12-14 11:14:44.955] [PSS] [debug] [3568|10080]media_transport.cpp:55 AddMediaDataCallback: callback= 0x13bfdbc7998, this= 0x13c324648c0
+[2024-12-14 11:14:44.955] [PSS] [debug] [3568|10080]media_session_impl.cpp:537 UpdateEventStream: update event stream success, stream_id= YzTXKUeLRUDQOGSJ, this= 0x13c32a4dab0
+[2024-12-14 11:14:44.955] [PSS] [debug] [3568|10080]media_session_impl.cpp:337 UpdateStream: update stream success, this= 0x13c32a4dab0
+[2024-12-14 11:14:44.955] [PSS] [debug] [3568|10080]media_session_impl.cpp:30 SetLocalParam: set local param success, this= 0x13c32a4dab0
+[2024-12-14 11:14:44.955] [PSS] [info] [3568|10080]media_session_impl.cpp:177 GetEventStream: stream_id= YzTXKUeLRUDQOGSJ, this= 0x13c32a4dab0
+[2024-12-14 11:14:44.955] [PSS] [debug] [3568|10080]driver_media_session.cpp:64 Init: init media session success, this= 0x13b473e12a0
+[2024-12-14 11:14:44.955] [PSS] [debug] [3568|10080]driver_media_session.cpp:89 GetLocalParam: get local param, this= 0x13b473e12a0
+[2024-12-14 11:14:44.955] [PSS] [info] [3568|10080]media_session_impl.cpp:40 GetLocalParam: get local param, session_id= eFpFkFAbKjQlplEa, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= YzTXKUeLRUDQOGSJ},, this= 0x13c32a4dab0
+[2024-12-14 11:14:44.955] [PSS] [debug] [3568|10080]driver_rpc.cpp:124 CreateSessionToService: generate session_id= eFpFkFAbKjQlplEa, this= 0x13bfdbd0480
+[2024-12-14 11:14:44.955] [PSS] [debug] [3568|10080]driver_rpc.cpp:139 CreateSessionToService: create session, req= session_param { session_id: "eFpFkFAbKjQlplEa" description: "StreamingSceneRender" connection_type: kConnectionTcp event_streams { stream_id: "YzTXKUeLRUDQOGSJ" connection_config { connection_type: kConnectionTcp direction: kSendAndReceive channel: 1 } } }, this= 0x13bfdbd0480
+[2024-12-14 11:14:44.955] [PSS] [debug] [3568|10080]streaming_driver_interface_impl.cpp:793 CreateMediaSession: creating session, session_id= eFpFkFAbKjQlplEa, this= 0x1397a1b2880
+[2024-12-14 11:14:44.955] [PSS] [debug] [3568|10080]driver_rpc.cpp:311 HandleCreateSessionResp: create session result= 0, this= 0x13bfdbd0480
+[2024-12-14 11:14:44.956] [PSS] [debug] [3568|10080]driver_rpc.cpp:233 UpdateSessionState: service update session state, request_id= 8741, request_msg= session_state: kSessionStateReady session_param { session_id: "eFpFkFAbKjQlplEa" description: "StreamingSceneRender" connection_type: kConnectionTcp event_streams { stream_id: "YzTXKUeLRUDQOGSJ" connection_config { connection_type: kConnectionTcp direction: kSendAndReceive channel: 1 } } }, this= 0x13bfdbd0480
+[2024-12-14 11:14:44.956] [PSS] [debug] [3568|10080]streaming_driver_interface_impl.cpp:323 NotifyServiceUpdateSessionState: state= 2, this= 0x1397a1b2880
+[2024-12-14 11:14:44.956] [PSS] [debug] [3568|10080]driver_media_session.cpp:100 UpdateSessionState: state= 2, param 0000013C32746770, this= 0x13b473e12a0
+[2024-12-14 11:14:44.956] [PSS] [info] [3568|10080]media_session_impl.cpp:44 SetRemoteParam: set remote param session_id= eFpFkFAbKjQlplEa, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= YzTXKUeLRUDQOGSJ},, this= 0x13c32a4dab0
+[2024-12-14 11:14:44.956] [PSS] [debug] [3568|10080]media_session_impl.cpp:543 NegotiateParam: input remote param session_id= eFpFkFAbKjQlplEa, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= YzTXKUeLRUDQOGSJ},, this= 0x13c32a4dab0
+[2024-12-14 11:14:44.956] [PSS] [debug] [3568|10080]media_session_impl.cpp:545 NegotiateParam: input local param session_id= eFpFkFAbKjQlplEa, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= YzTXKUeLRUDQOGSJ},, this= 0x13c32a4dab0
+[2024-12-14 11:14:44.956] [PSS] [debug] [3568|10080]media_session_impl.cpp:632 NegotiateParam: output local param session_id= eFpFkFAbKjQlplEa, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= YzTXKUeLRUDQOGSJ},, this= 0x13c32a4dab0
+[2024-12-14 11:14:44.956] [PSS] [debug] [3568|10080]media_session_impl.cpp:285 UpdateStream: update stream session_id= eFpFkFAbKjQlplEa, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= YzTXKUeLRUDQOGSJ},, this= 0x13c32a4dab0
+[2024-12-14 11:14:44.956] [PSS] [debug] [3568|10080]media_session_impl.cpp:506 UpdateEventStream: event stream existed, reset it, this= 0x13c32a4dab0
+[2024-12-14 11:14:44.956] [PSS] [debug] [3568|10080]event_stream_impl.cpp:27 Reset: reset event stream= YzTXKUeLRUDQOGSJ, this= 0x13bfdbc7980
+[2024-12-14 11:14:44.956] [PSS] [debug] [3568|10080]media_transport.cpp:31 Reset: reset media_transport, this= 0x13c324648c0
+[2024-12-14 11:14:44.956] [PSS] [debug] [3568|10080]media_transport.cpp:20 Init: try to add channel to external_transport,channel= 1, this= 0x13c324648c0
+[2024-12-14 11:14:44.956] [PSS] [debug] [3568|10080]streaming_driver_interface_impl.cpp:435 AddMediaDataCallback: add transport channel= 1,callback= 0x13c324648c0, this= 0x1397a1b2880
+[2024-12-14 11:14:44.956] [PSS] [debug] [3568|10080]media_transport.cpp:27 Init: init media_transport success, this= 0x13c324648c0
+[2024-12-14 11:14:44.956] [PSS] [info] [3568|10080]event_stream_impl.cpp:16 Init: event stream stream_id= YzTXKUeLRUDQOGSJ, this= 0x13bfdbc7980
+[2024-12-14 11:14:44.956] [PSS] [debug] [3568|10080]event_stream_impl.cpp:23 Init: init event stream success, this= 0x13bfdbc7980
+[2024-12-14 11:14:44.956] [PSS] [debug] [3568|10080]event_stream_impl.cpp:106 SetMediaTransport: set media_transport to event stream, this= 0x13bfdbc7980
+[2024-12-14 11:14:44.956] [PSS] [debug] [3568|10080]media_transport.cpp:55 AddMediaDataCallback: callback= 0x13bfdbc7998, this= 0x13c324648c0
+[2024-12-14 11:14:44.956] [PSS] [debug] [3568|10080]media_session_impl.cpp:537 UpdateEventStream: update event stream success, stream_id= YzTXKUeLRUDQOGSJ, this= 0x13c32a4dab0
+[2024-12-14 11:14:44.956] [PSS] [debug] [3568|10080]media_session_impl.cpp:337 UpdateStream: update stream success, this= 0x13c32a4dab0
+[2024-12-14 11:14:44.956] [PSS] [debug] [3568|10080]media_session_impl.cpp:63 SetRemoteParam: set remote param success, this= 0x13c32a4dab0
+[2024-12-14 11:14:44.956] [PSS] [info] [3568|10080]media_session_impl.cpp:206 Start: start session, session_id= eFpFkFAbKjQlplEa, this= 0x13c32a4dab0
+[2024-12-14 11:14:44.956] [PSS] [debug] [3568|10080]media_session_impl.cpp:230 Start: start video_receive stream, this= 0x13c32a4dab0
+[2024-12-14 11:14:44.956] [PSS] [debug] [3568|10080]event_stream_impl.cpp:43 Start: stream_id= YzTXKUeLRUDQOGSJ, this= 0x13bfdbc7980
+[2024-12-14 11:14:44.956] [PSS] [debug] [3568|10080]media_session_impl.cpp:238 Start: start session success, session_id= eFpFkFAbKjQlplEa, this= 0x13c32a4dab0
+[2024-12-14 11:14:44.956] [PSS] [debug] [3568|10080]driver_media_session.cpp:133 UpdateSessionState: update session config success, this= 0x13b473e12a0
+[2024-12-14 11:14:44.956] [PSS] [debug] [3568|10080]streaming_driver_interface_impl.cpp:341 NotifyServiceUpdateSessionState: session is ready, report connect success, this= 0x1397a1b2880
+[2024-12-14 11:14:44.957] [PSS] [debug] [3568|1880]streaming_driver_interface_impl.cpp:719 HandleUpdateRenderState: state_type: kStateTypePrepared device_info { device_id: "hmd_zQTPt61O" device_name: "StreamingServiceAndroid" }, this= 0x1397a1b2880
+[2024-12-14 11:14:44.957] [PSS] [info] [3568|1880]streaming_driver_interface_impl.cpp:57 StartStreaming: (1920,1920), fps= 72, this= 0x1397a1b2880
+[2024-12-14 11:14:44.957] [PSS] [debug] [3568|10080]streaming_driver_interface_impl.cpp:522 InvokeStartStreaming: send start event to service, this= 0x1397a1b2880
+[2024-12-14 11:14:45.346] [PSS] [debug] [3568|1880]streaming_driver_interface_impl.cpp:719 HandleUpdateRenderState: state_type: kStateTypeStarted, this= 0x1397a1b2880
+[2024-12-14 11:14:45.346] [PSS] [debug] [3568|1880]streaming_driver_interface_impl.cpp:171 StartHandTracking: start hand tracking, this= 0x1397a1b2880
+[2024-12-14 11:14:45.346] [PSS] [error] [3568|1880]streaming_driver_interface_impl.cpp:190 RequestHandTrackingData: "hand_tracking not started", !hand_tracking_flag_, this= 0x1397a1b2880
+[2024-12-14 11:16:17.358] [PSS] [info] [3568|6464]streaming_driver_interface_impl.cpp:67 StopStreaming: stop streaming, this= 0x1397a1b2880
+[2024-12-14 11:16:17.358] [PSS] [debug] [3568|6464]streaming_driver_interface_impl.cpp:180 StopHandTracking: stop hand tracking, this= 0x1397a1b2880
+[2024-12-14 11:16:17.358] [PSS] [debug] [3568|10080]streaming_driver_interface_impl.cpp:534 InvokeStopStreaming: stop streaming, state= 2, this= 0x1397a1b2880
+[2024-12-14 11:16:17.358] [PSS] [error] [3568|10080]streaming_driver_interface_impl.cpp:584 InvokeChangeHandTrackingState: "streaming not started", streaming_state_ != StreamingState::kStreamingReady, this= 0x1397a1b2880
+[2024-12-14 11:16:17.359] [PSS] [debug] [3568|10080]streaming_driver_interface_impl.cpp:503 InvokeDisconnectFromService: disconnect from service, this= 0x1397a1b2880
+[2024-12-14 11:16:17.359] [PSS] [debug] [3568|10080]driver_media_session.cpp:68 Reset: reset client session, this= 0x13b473e12a0
+[2024-12-14 11:16:17.359] [PSS] [info] [3568|10080]media_session_impl.cpp:258 Stop: stop session, session_id= eFpFkFAbKjQlplEa, this= 0x13c32a4dab0
+[2024-12-14 11:16:17.359] [PSS] [debug] [3568|10080]event_stream_impl.cpp:49 Stop: stream_id= YzTXKUeLRUDQOGSJ, this= 0x13bfdbc7980
+[2024-12-14 11:16:17.359] [PSS] [debug] [3568|10080]media_session_impl.cpp:281 Stop: stop session success, session_id= eFpFkFAbKjQlplEa, this= 0x13c32a4dab0
+[2024-12-14 11:16:17.359] [PSS] [debug] [3568|10080]event_stream_impl.cpp:27 Reset: reset event stream= YzTXKUeLRUDQOGSJ, this= 0x13bfdbc7980
+[2024-12-14 11:16:17.359] [PSS] [debug] [3568|10080]media_transport.cpp:31 Reset: reset media_transport, this= 0x13c324648c0
+[2024-12-14 11:16:17.360] [PSS] [debug] [3568|10080]driver_media_session.cpp:78 Reset: reset client session success, this= 0x13b473e12a0
+[2024-12-14 11:16:17.360] [PSS] [debug] [3568|10080]driver_media_session.cpp:68 Reset: reset client session, this= 0x13b473e12a0
+[2024-12-14 11:16:17.360] [PSS] [debug] [3568|10080]driver_media_session.cpp:78 Reset: reset client session success, this= 0x13b473e12a0
+[2024-12-14 11:16:17.360] [PSS] [debug] [3568|10080]driver_rpc.cpp:109 DisconnectFromService: disconnect from service, request_id= 2req = client_id: "kNWGr58eRx2biWzA", this= 0x13bfdbd0480
+[2024-12-14 11:16:17.460] [PSS] [debug] [3568|10080]driver_rpc.cpp:294 HandleDisconnectFromServiceResp: disconnect from service result= -5, this= 0x13bfdbd0480
+[2024-12-14 11:16:17.460] [PSS] [error] [3568|10080]driver_rpc.cpp:299 HandleDisconnectFromServiceResp: rpc error, this= 0x13bfdbd0480
+[2024-12-14 11:16:17.460] [PSS] [debug] [3568|10080]streaming_driver_interface_impl.cpp:287 NotifyDisconnectFromServiceResult: disconnect from service result= -5, this= 0x1397a1b2880
+[2024-12-14 11:16:17.602] [PSS] [error] [3568|10080]rpc.cpp:283 HandleReceiveData: "response cannot find correspond request,", iter == inflight_requests_.end(), this= 0x13bae5d7980
+[2024-12-14 11:16:17.602] [PSS] [error] [3568|13920]transport_client_tcp2.cpp:176 HandleReceiveDataResult: receive error= 10054, msg= 远程主机强迫关闭了一个现有的连接。
+[2024-12-14 11:16:17.602] [PSS] [error] [3568|13920]transport_client_tcp2.cpp:180 HandleReceiveDataResult: has been disconnected, this= 0x13bfd746250
+[2024-12-14 11:16:17.602] [PSS] [debug] [3568|10080]streaming_driver_interface_impl.cpp:699 HandleNetworkDisconnect: handle network disconnect,reason= 10054, this= 0x1397a1b2880
+[2024-12-14 11:19:21.212] [PSS] [debug] [3568|6464]streaming_driver_interface_impl.cpp:25 StreamingDriverInterfaceImpl: callback= 0x13c434d6f10, this= 0x13bae6677f0
+[2024-12-14 11:19:21.212] [PSS] [debug] [3568|6464]streaming_driver_interface_impl.cpp:30 ~StreamingDriverInterfaceImpl: called, this= 0x1397a1b2880
+[2024-12-14 11:19:21.212] [PSS] [debug] [3568|6464]transport_client_tcp2.cpp:71 Stop: called, this= 0x13bfd746250
+[2024-12-14 11:19:21.213] [PSS] [debug] [3568|6464]streaming_driver_interface_impl.cpp:95 SetTrackingOrigin: tracking origin= FloorLevel, this= 0x13bae6677f0
+[2024-12-14 11:19:21.213] [PSS] [debug] [3568|6464]streaming_driver_interface_impl.cpp:39 ConnectToService: try to connect to service, this= 0x13bae6677f0
+[2024-12-14 11:19:21.213] [PSS] [error] [3568|16868]streaming_driver_interface_impl.cpp:572 InvokeSetTrackingOrigin: "invalid media session", !media_session_, this= 0x13bae6677f0
+[2024-12-14 11:19:21.213] [PSS] [debug] [3568|16868]streaming_driver_interface_impl.cpp:469 InvokeConnectToService: connect to service through the network, port= 54000, this= 0x13bae6677f0
+[2024-12-14 11:19:21.213] [PSS] [debug] [3568|16868]transport_client_tcp2.cpp:34 Start: buffer size(send\recv): 1048576\1048576, this= 0x13c431b1d90
+[2024-12-14 11:19:21.213] [PSS] [info] [3568|16868]transport_client_tcp2.cpp:58 Start: server= 127.0.0.1:54000, local=0.0.0.0:0, this= 0x13c431b1d90
+[2024-12-14 11:19:21.213] [PSS] [debug] [3568|16868]transport_data_receiver_raw.cpp:34 UpdateConfig: enable_channel= 1, enable_packet= 1, sink= 0x13c431b1da0, this= 0x13c428bc140
+[2024-12-14 11:19:21.213] [PSS] [debug] [3568|3656]streaming_driver_interface_impl.cpp:248 NotifyConnectResult: network connect to service result= 0, this= 0x13bae6677f0
+[2024-12-14 11:19:21.213] [PSS] [debug] [3568|3656]transport_client_tcp2.cpp:120 HandleConnect: local= 127.0.0.1:50527, this= 0x13c431b1d90
+[2024-12-14 11:19:21.213] [PSS] [debug] [3568|16868]streaming_driver_interface_impl.cpp:482 InvokeConnectToServiceByRpc: begin to connect to service by rpc, this= 0x13bae6677f0
+[2024-12-14 11:19:21.214] [PSS] [debug] [3568|16868]driver_rpc.cpp:87 ConnectToService: connect to service, request_id= 0, req = client_id: "nWxIZmSlf4ewMAOY" client_name: "StreamingDriverSDK" client_version: "2.0.2.11" client_description: "StreamingSceneRender", this= 0x13bfdbcfc80
+[2024-12-14 11:19:21.214] [PSS] [debug] [3568|16868]streaming_driver_interface_impl.cpp:499 InvokeConnectToServiceByRpc: connecting to service by rpc, local client_id= nWxIZmSlf4ewMAOY, this= 0x13bae6677f0
+[2024-12-14 11:19:21.214] [PSS] [debug] [3568|16868]driver_rpc.cpp:277 HandleConnectToServiceResp: connect to service result= 0, this= 0x13bfdbcfc80
+[2024-12-14 11:19:21.214] [PSS] [debug] [3568|16868]streaming_driver_interface_impl.cpp:270 NotifyConnectToServiceResult: connect to service result= 0, this= 0x13bae6677f0
+[2024-12-14 11:19:21.214] [PSS] [debug] [3568|16868]streaming_driver_interface_impl.cpp:753 CreateMediaSession: try to create session, this= 0x13bae6677f0
+[2024-12-14 11:19:21.214] [PSS] [debug] [3568|16868]driver_media_session.cpp:16 DriverMediaSession: session_id= jvxCaYuiEDpvdwRU, this= 0x139793e6ac0
+[2024-12-14 11:19:21.214] [PSS] [debug] [3568|16868]driver_media_session.cpp:28 Init: init media session, role= 0 session_id= jvxCaYuiEDpvdwRU, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= yvuLwEJncdMyrhsE},, this= 0x139793e6ac0
+[2024-12-14 11:19:21.214] [PSS] [info] [3568|16868]media_session_impl.cpp:16 SetLocalParam: set local param session_id= jvxCaYuiEDpvdwRU, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= yvuLwEJncdMyrhsE},, this= 0x13b46e8e530
+[2024-12-14 11:19:21.214] [PSS] [debug] [3568|16868]media_session_impl.cpp:285 UpdateStream: update stream session_id= jvxCaYuiEDpvdwRU, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= yvuLwEJncdMyrhsE},, this= 0x13b46e8e530
+[2024-12-14 11:19:21.215] [PSS] [debug] [3568|16868]media_transport.cpp:20 Init: try to add channel to external_transport,channel= 1, this= 0x1397985d400
+[2024-12-14 11:19:21.215] [PSS] [debug] [3568|16868]streaming_driver_interface_impl.cpp:435 AddMediaDataCallback: add transport channel= 1,callback= 0x1397985d400, this= 0x13bae6677f0
+[2024-12-14 11:19:21.215] [PSS] [debug] [3568|16868]media_transport.cpp:27 Init: init media_transport success, this= 0x1397985d400
+[2024-12-14 11:19:21.215] [PSS] [info] [3568|16868]event_stream_impl.cpp:16 Init: event stream stream_id= yvuLwEJncdMyrhsE, this= 0x13bfdbd0080
+[2024-12-14 11:19:21.215] [PSS] [debug] [3568|16868]event_stream_impl.cpp:23 Init: init event stream success, this= 0x13bfdbd0080
+[2024-12-14 11:19:21.215] [PSS] [debug] [3568|16868]event_stream_impl.cpp:106 SetMediaTransport: set media_transport to event stream, this= 0x13bfdbd0080
+[2024-12-14 11:19:21.215] [PSS] [debug] [3568|16868]media_transport.cpp:55 AddMediaDataCallback: callback= 0x13bfdbd0098, this= 0x1397985d400
+[2024-12-14 11:19:21.215] [PSS] [debug] [3568|16868]media_session_impl.cpp:537 UpdateEventStream: update event stream success, stream_id= yvuLwEJncdMyrhsE, this= 0x13b46e8e530
+[2024-12-14 11:19:21.215] [PSS] [debug] [3568|16868]media_session_impl.cpp:337 UpdateStream: update stream success, this= 0x13b46e8e530
+[2024-12-14 11:19:21.215] [PSS] [debug] [3568|16868]media_session_impl.cpp:30 SetLocalParam: set local param success, this= 0x13b46e8e530
+[2024-12-14 11:19:21.215] [PSS] [info] [3568|16868]media_session_impl.cpp:177 GetEventStream: stream_id= yvuLwEJncdMyrhsE, this= 0x13b46e8e530
+[2024-12-14 11:19:21.215] [PSS] [debug] [3568|16868]driver_media_session.cpp:64 Init: init media session success, this= 0x139793e6ac0
+[2024-12-14 11:19:21.215] [PSS] [debug] [3568|16868]driver_media_session.cpp:89 GetLocalParam: get local param, this= 0x139793e6ac0
+[2024-12-14 11:19:21.215] [PSS] [info] [3568|16868]media_session_impl.cpp:40 GetLocalParam: get local param, session_id= jvxCaYuiEDpvdwRU, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= yvuLwEJncdMyrhsE},, this= 0x13b46e8e530
+[2024-12-14 11:19:21.215] [PSS] [debug] [3568|16868]driver_rpc.cpp:124 CreateSessionToService: generate session_id= jvxCaYuiEDpvdwRU, this= 0x13bfdbcfc80
+[2024-12-14 11:19:21.215] [PSS] [debug] [3568|16868]driver_rpc.cpp:139 CreateSessionToService: create session, req= session_param { session_id: "jvxCaYuiEDpvdwRU" description: "StreamingSceneRender" connection_type: kConnectionTcp event_streams { stream_id: "yvuLwEJncdMyrhsE" connection_config { connection_type: kConnectionTcp direction: kSendAndReceive channel: 1 } } }, this= 0x13bfdbcfc80
+[2024-12-14 11:19:21.215] [PSS] [debug] [3568|16868]streaming_driver_interface_impl.cpp:793 CreateMediaSession: creating session, session_id= jvxCaYuiEDpvdwRU, this= 0x13bae6677f0
+[2024-12-14 11:19:21.215] [PSS] [debug] [3568|16868]driver_rpc.cpp:311 HandleCreateSessionResp: create session result= 0, this= 0x13bfdbcfc80
+[2024-12-14 11:19:21.216] [PSS] [debug] [3568|16868]driver_rpc.cpp:233 UpdateSessionState: service update session state, request_id= 4348, request_msg= session_state: kSessionStateReady session_param { session_id: "jvxCaYuiEDpvdwRU" description: "StreamingSceneRender" connection_type: kConnectionTcp event_streams { stream_id: "yvuLwEJncdMyrhsE" connection_config { connection_type: kConnectionTcp direction: kSendAndReceive channel: 1 } } }, this= 0x13bfdbcfc80
+[2024-12-14 11:19:21.216] [PSS] [debug] [3568|16868]streaming_driver_interface_impl.cpp:323 NotifyServiceUpdateSessionState: state= 2, this= 0x13bae6677f0
+[2024-12-14 11:19:21.216] [PSS] [debug] [3568|16868]driver_media_session.cpp:100 UpdateSessionState: state= 2, param 0000013B460ED920, this= 0x139793e6ac0
+[2024-12-14 11:19:21.216] [PSS] [info] [3568|16868]media_session_impl.cpp:44 SetRemoteParam: set remote param session_id= jvxCaYuiEDpvdwRU, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= yvuLwEJncdMyrhsE},, this= 0x13b46e8e530
+[2024-12-14 11:19:21.216] [PSS] [debug] [3568|16868]media_session_impl.cpp:543 NegotiateParam: input remote param session_id= jvxCaYuiEDpvdwRU, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= yvuLwEJncdMyrhsE},, this= 0x13b46e8e530
+[2024-12-14 11:19:21.216] [PSS] [debug] [3568|16868]media_session_impl.cpp:545 NegotiateParam: input local param session_id= jvxCaYuiEDpvdwRU, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= yvuLwEJncdMyrhsE},, this= 0x13b46e8e530
+[2024-12-14 11:19:21.216] [PSS] [debug] [3568|16868]media_session_impl.cpp:632 NegotiateParam: output local param session_id= jvxCaYuiEDpvdwRU, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= yvuLwEJncdMyrhsE},, this= 0x13b46e8e530
+[2024-12-14 11:19:21.216] [PSS] [debug] [3568|16868]media_session_impl.cpp:285 UpdateStream: update stream session_id= jvxCaYuiEDpvdwRU, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= yvuLwEJncdMyrhsE},, this= 0x13b46e8e530
+[2024-12-14 11:19:21.216] [PSS] [debug] [3568|16868]media_session_impl.cpp:506 UpdateEventStream: event stream existed, reset it, this= 0x13b46e8e530
+[2024-12-14 11:19:21.216] [PSS] [debug] [3568|16868]event_stream_impl.cpp:27 Reset: reset event stream= yvuLwEJncdMyrhsE, this= 0x13bfdbd0080
+[2024-12-14 11:19:21.216] [PSS] [debug] [3568|16868]media_transport.cpp:31 Reset: reset media_transport, this= 0x1397985d400
+[2024-12-14 11:19:21.216] [PSS] [debug] [3568|16868]media_transport.cpp:20 Init: try to add channel to external_transport,channel= 1, this= 0x1397985e5d0
+[2024-12-14 11:19:21.216] [PSS] [debug] [3568|16868]streaming_driver_interface_impl.cpp:435 AddMediaDataCallback: add transport channel= 1,callback= 0x1397985e5d0, this= 0x13bae6677f0
+[2024-12-14 11:19:21.216] [PSS] [debug] [3568|16868]media_transport.cpp:27 Init: init media_transport success, this= 0x1397985e5d0
+[2024-12-14 11:19:21.216] [PSS] [info] [3568|16868]event_stream_impl.cpp:16 Init: event stream stream_id= yvuLwEJncdMyrhsE, this= 0x13bfdbd0080
+[2024-12-14 11:19:21.216] [PSS] [debug] [3568|16868]event_stream_impl.cpp:23 Init: init event stream success, this= 0x13bfdbd0080
+[2024-12-14 11:19:21.216] [PSS] [debug] [3568|16868]event_stream_impl.cpp:106 SetMediaTransport: set media_transport to event stream, this= 0x13bfdbd0080
+[2024-12-14 11:19:21.216] [PSS] [debug] [3568|16868]media_transport.cpp:55 AddMediaDataCallback: callback= 0x13bfdbd0098, this= 0x1397985e5d0
+[2024-12-14 11:19:21.216] [PSS] [debug] [3568|16868]media_session_impl.cpp:537 UpdateEventStream: update event stream success, stream_id= yvuLwEJncdMyrhsE, this= 0x13b46e8e530
+[2024-12-14 11:19:21.216] [PSS] [debug] [3568|16868]media_session_impl.cpp:337 UpdateStream: update stream success, this= 0x13b46e8e530
+[2024-12-14 11:19:21.216] [PSS] [debug] [3568|16868]media_session_impl.cpp:63 SetRemoteParam: set remote param success, this= 0x13b46e8e530
+[2024-12-14 11:19:21.216] [PSS] [info] [3568|16868]media_session_impl.cpp:206 Start: start session, session_id= jvxCaYuiEDpvdwRU, this= 0x13b46e8e530
+[2024-12-14 11:19:21.216] [PSS] [debug] [3568|16868]media_session_impl.cpp:230 Start: start video_receive stream, this= 0x13b46e8e530
+[2024-12-14 11:19:21.216] [PSS] [debug] [3568|16868]event_stream_impl.cpp:43 Start: stream_id= yvuLwEJncdMyrhsE, this= 0x13bfdbd0080
+[2024-12-14 11:19:21.216] [PSS] [debug] [3568|16868]media_session_impl.cpp:238 Start: start session success, session_id= jvxCaYuiEDpvdwRU, this= 0x13b46e8e530
+[2024-12-14 11:19:21.216] [PSS] [debug] [3568|16868]driver_media_session.cpp:133 UpdateSessionState: update session config success, this= 0x139793e6ac0
+[2024-12-14 11:19:21.216] [PSS] [debug] [3568|16868]streaming_driver_interface_impl.cpp:341 NotifyServiceUpdateSessionState: session is ready, report connect success, this= 0x13bae6677f0
+[2024-12-14 11:19:21.216] [PSS] [debug] [3568|12232]streaming_driver_interface_impl.cpp:719 HandleUpdateRenderState: state_type: kStateTypePrepared device_info { device_id: "hmd_zQTPt61O" device_name: "StreamingServiceAndroid" }, this= 0x13bae6677f0
+[2024-12-14 11:19:21.216] [PSS] [info] [3568|12232]streaming_driver_interface_impl.cpp:57 StartStreaming: (1920,1920), fps= 72, this= 0x13bae6677f0
+[2024-12-14 11:19:21.216] [PSS] [debug] [3568|16868]streaming_driver_interface_impl.cpp:522 InvokeStartStreaming: send start event to service, this= 0x13bae6677f0
+[2024-12-14 11:19:21.677] [PSS] [debug] [3568|12232]streaming_driver_interface_impl.cpp:719 HandleUpdateRenderState: state_type: kStateTypeStarted, this= 0x13bae6677f0
+[2024-12-14 11:19:21.678] [PSS] [debug] [3568|12232]streaming_driver_interface_impl.cpp:171 StartHandTracking: start hand tracking, this= 0x13bae6677f0
+[2024-12-14 11:19:21.678] [PSS] [error] [3568|12232]streaming_driver_interface_impl.cpp:190 RequestHandTrackingData: "hand_tracking not started", !hand_tracking_flag_, this= 0x13bae6677f0
+[2024-12-14 11:22:18.921] [PSS] [info] [3568|6464]streaming_driver_interface_impl.cpp:67 StopStreaming: stop streaming, this= 0x13bae6677f0
+[2024-12-14 11:22:18.921] [PSS] [debug] [3568|6464]streaming_driver_interface_impl.cpp:180 StopHandTracking: stop hand tracking, this= 0x13bae6677f0
+[2024-12-14 11:22:18.921] [PSS] [debug] [3568|16868]streaming_driver_interface_impl.cpp:534 InvokeStopStreaming: stop streaming, state= 2, this= 0x13bae6677f0
+[2024-12-14 11:22:18.922] [PSS] [error] [3568|16868]streaming_driver_interface_impl.cpp:584 InvokeChangeHandTrackingState: "streaming not started", streaming_state_ != StreamingState::kStreamingReady, this= 0x13bae6677f0
+[2024-12-14 11:22:18.922] [PSS] [debug] [3568|16868]streaming_driver_interface_impl.cpp:503 InvokeDisconnectFromService: disconnect from service, this= 0x13bae6677f0
+[2024-12-14 11:22:18.922] [PSS] [debug] [3568|16868]driver_media_session.cpp:68 Reset: reset client session, this= 0x139793e6ac0
+[2024-12-14 11:22:18.922] [PSS] [info] [3568|16868]media_session_impl.cpp:258 Stop: stop session, session_id= jvxCaYuiEDpvdwRU, this= 0x13b46e8e530
+[2024-12-14 11:22:18.922] [PSS] [debug] [3568|16868]event_stream_impl.cpp:49 Stop: stream_id= yvuLwEJncdMyrhsE, this= 0x13bfdbd0080
+[2024-12-14 11:22:18.922] [PSS] [debug] [3568|16868]media_session_impl.cpp:281 Stop: stop session success, session_id= jvxCaYuiEDpvdwRU, this= 0x13b46e8e530
+[2024-12-14 11:22:18.922] [PSS] [debug] [3568|16868]event_stream_impl.cpp:27 Reset: reset event stream= yvuLwEJncdMyrhsE, this= 0x13bfdbd0080
+[2024-12-14 11:22:18.922] [PSS] [debug] [3568|16868]media_transport.cpp:31 Reset: reset media_transport, this= 0x1397985e5d0
+[2024-12-14 11:22:18.923] [PSS] [debug] [3568|16868]driver_media_session.cpp:78 Reset: reset client session success, this= 0x139793e6ac0
+[2024-12-14 11:22:18.923] [PSS] [debug] [3568|16868]driver_media_session.cpp:68 Reset: reset client session, this= 0x139793e6ac0
+[2024-12-14 11:22:18.923] [PSS] [debug] [3568|16868]driver_media_session.cpp:78 Reset: reset client session success, this= 0x139793e6ac0
+[2024-12-14 11:22:18.924] [PSS] [debug] [3568|16868]driver_rpc.cpp:109 DisconnectFromService: disconnect from service, request_id= 2req = client_id: "nWxIZmSlf4ewMAOY", this= 0x13bfdbcfc80
+[2024-12-14 11:22:19.024] [PSS] [debug] [3568|16868]driver_rpc.cpp:294 HandleDisconnectFromServiceResp: disconnect from service result= -5, this= 0x13bfdbcfc80
+[2024-12-14 11:22:19.024] [PSS] [error] [3568|16868]driver_rpc.cpp:299 HandleDisconnectFromServiceResp: rpc error, this= 0x13bfdbcfc80
+[2024-12-14 11:22:19.024] [PSS] [debug] [3568|16868]streaming_driver_interface_impl.cpp:287 NotifyDisconnectFromServiceResult: disconnect from service result= -5, this= 0x13bae6677f0
+[2024-12-14 11:22:19.114] [PSS] [error] [3568|16868]rpc.cpp:283 HandleReceiveData: "response cannot find correspond request,", iter == inflight_requests_.end(), this= 0x13b459aa8b0
+[2024-12-14 11:22:19.114] [PSS] [error] [3568|3656]transport_client_tcp2.cpp:176 HandleReceiveDataResult: receive error= 10054, msg= 远程主机强迫关闭了一个现有的连接。
+[2024-12-14 11:22:19.114] [PSS] [error] [3568|3656]transport_client_tcp2.cpp:180 HandleReceiveDataResult: has been disconnected, this= 0x13c431b1d90
+[2024-12-14 11:22:19.114] [PSS] [debug] [3568|16868]streaming_driver_interface_impl.cpp:699 HandleNetworkDisconnect: handle network disconnect,reason= 10054, this= 0x13bae6677f0
+[2024-12-14 11:22:24.515] [PSS] [debug] [3568|6464]streaming_driver_interface_impl.cpp:25 StreamingDriverInterfaceImpl: callback= 0x1397ac10410, this= 0x1397a303510
+[2024-12-14 11:22:24.515] [PSS] [debug] [3568|6464]streaming_driver_interface_impl.cpp:30 ~StreamingDriverInterfaceImpl: called, this= 0x13bae6677f0
+[2024-12-14 11:22:24.515] [PSS] [debug] [3568|6464]transport_client_tcp2.cpp:71 Stop: called, this= 0x13c431b1d90
+[2024-12-14 11:22:24.516] [PSS] [debug] [3568|6464]streaming_driver_interface_impl.cpp:95 SetTrackingOrigin: tracking origin= FloorLevel, this= 0x1397a303510
+[2024-12-14 11:22:24.516] [PSS] [debug] [3568|6464]streaming_driver_interface_impl.cpp:39 ConnectToService: try to connect to service, this= 0x1397a303510
+[2024-12-14 11:22:24.516] [PSS] [error] [3568|9380]streaming_driver_interface_impl.cpp:572 InvokeSetTrackingOrigin: "invalid media session", !media_session_, this= 0x1397a303510
+[2024-12-14 11:22:24.516] [PSS] [debug] [3568|9380]streaming_driver_interface_impl.cpp:469 InvokeConnectToService: connect to service through the network, port= 54000, this= 0x1397a303510
+[2024-12-14 11:22:24.516] [PSS] [debug] [3568|9380]transport_client_tcp2.cpp:34 Start: buffer size(send\recv): 1048576\1048576, this= 0x13c431c6980
+[2024-12-14 11:22:24.516] [PSS] [info] [3568|9380]transport_client_tcp2.cpp:58 Start: server= 127.0.0.1:54000, local=0.0.0.0:0, this= 0x13c431c6980
+[2024-12-14 11:22:24.516] [PSS] [debug] [3568|9380]transport_data_receiver_raw.cpp:34 UpdateConfig: enable_channel= 1, enable_packet= 1, sink= 0x13c431c6990, this= 0x13978029fa0
+[2024-12-14 11:22:24.517] [PSS] [debug] [3568|18180]streaming_driver_interface_impl.cpp:248 NotifyConnectResult: network connect to service result= 0, this= 0x1397a303510
+[2024-12-14 11:22:24.517] [PSS] [debug] [3568|9380]streaming_driver_interface_impl.cpp:482 InvokeConnectToServiceByRpc: begin to connect to service by rpc, this= 0x1397a303510
+[2024-12-14 11:22:24.517] [PSS] [debug] [3568|18180]transport_client_tcp2.cpp:120 HandleConnect: local= 127.0.0.1:50519, this= 0x13c431c6980
+[2024-12-14 11:22:24.517] [PSS] [debug] [3568|9380]driver_rpc.cpp:87 ConnectToService: connect to service, request_id= 0, req = client_id: "bHE1lHKp3dVmCllg" client_name: "StreamingDriverSDK" client_version: "2.0.2.11" client_description: "StreamingSceneRender", this= 0x13bfdbc8480
+[2024-12-14 11:22:24.517] [PSS] [debug] [3568|9380]streaming_driver_interface_impl.cpp:499 InvokeConnectToServiceByRpc: connecting to service by rpc, local client_id= bHE1lHKp3dVmCllg, this= 0x1397a303510
+[2024-12-14 11:22:24.518] [PSS] [debug] [3568|9380]driver_rpc.cpp:277 HandleConnectToServiceResp: connect to service result= 0, this= 0x13bfdbc8480
+[2024-12-14 11:22:24.518] [PSS] [debug] [3568|9380]streaming_driver_interface_impl.cpp:270 NotifyConnectToServiceResult: connect to service result= 0, this= 0x1397a303510
+[2024-12-14 11:22:24.518] [PSS] [debug] [3568|9380]streaming_driver_interface_impl.cpp:753 CreateMediaSession: try to create session, this= 0x1397a303510
+[2024-12-14 11:22:24.518] [PSS] [debug] [3568|9380]driver_media_session.cpp:16 DriverMediaSession: session_id= kFQHgzVZcjfTTXzP, this= 0x13bfdfaca30
+[2024-12-14 11:22:24.518] [PSS] [debug] [3568|9380]driver_media_session.cpp:28 Init: init media session, role= 0 session_id= kFQHgzVZcjfTTXzP, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= KHyIJoDvCfaFrePw},, this= 0x13bfdfaca30
+[2024-12-14 11:22:24.518] [PSS] [info] [3568|9380]media_session_impl.cpp:16 SetLocalParam: set local param session_id= kFQHgzVZcjfTTXzP, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= KHyIJoDvCfaFrePw},, this= 0x13c32a4d110
+[2024-12-14 11:22:24.518] [PSS] [debug] [3568|9380]media_session_impl.cpp:285 UpdateStream: update stream session_id= kFQHgzVZcjfTTXzP, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= KHyIJoDvCfaFrePw},, this= 0x13c32a4d110
+[2024-12-14 11:22:24.519] [PSS] [debug] [3568|9380]media_transport.cpp:20 Init: try to add channel to external_transport,channel= 1, this= 0x139789fd960
+[2024-12-14 11:22:24.519] [PSS] [debug] [3568|9380]streaming_driver_interface_impl.cpp:435 AddMediaDataCallback: add transport channel= 1,callback= 0x139789fd960, this= 0x1397a303510
+[2024-12-14 11:22:24.519] [PSS] [debug] [3568|9380]media_transport.cpp:27 Init: init media_transport success, this= 0x139789fd960
+[2024-12-14 11:22:24.519] [PSS] [info] [3568|9380]event_stream_impl.cpp:16 Init: event stream stream_id= KHyIJoDvCfaFrePw, this= 0x13bfdbd5580
+[2024-12-14 11:22:24.519] [PSS] [debug] [3568|9380]event_stream_impl.cpp:23 Init: init event stream success, this= 0x13bfdbd5580
+[2024-12-14 11:22:24.519] [PSS] [debug] [3568|9380]event_stream_impl.cpp:106 SetMediaTransport: set media_transport to event stream, this= 0x13bfdbd5580
+[2024-12-14 11:22:24.519] [PSS] [debug] [3568|9380]media_transport.cpp:55 AddMediaDataCallback: callback= 0x13bfdbd5598, this= 0x139789fd960
+[2024-12-14 11:22:24.519] [PSS] [debug] [3568|9380]media_session_impl.cpp:537 UpdateEventStream: update event stream success, stream_id= KHyIJoDvCfaFrePw, this= 0x13c32a4d110
+[2024-12-14 11:22:24.519] [PSS] [debug] [3568|9380]media_session_impl.cpp:337 UpdateStream: update stream success, this= 0x13c32a4d110
+[2024-12-14 11:22:24.519] [PSS] [debug] [3568|9380]media_session_impl.cpp:30 SetLocalParam: set local param success, this= 0x13c32a4d110
+[2024-12-14 11:22:24.519] [PSS] [info] [3568|9380]media_session_impl.cpp:177 GetEventStream: stream_id= KHyIJoDvCfaFrePw, this= 0x13c32a4d110
+[2024-12-14 11:22:24.519] [PSS] [debug] [3568|9380]driver_media_session.cpp:64 Init: init media session success, this= 0x13bfdfaca30
+[2024-12-14 11:22:24.519] [PSS] [debug] [3568|9380]driver_media_session.cpp:89 GetLocalParam: get local param, this= 0x13bfdfaca30
+[2024-12-14 11:22:24.519] [PSS] [info] [3568|9380]media_session_impl.cpp:40 GetLocalParam: get local param, session_id= kFQHgzVZcjfTTXzP, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= KHyIJoDvCfaFrePw},, this= 0x13c32a4d110
+[2024-12-14 11:22:24.519] [PSS] [debug] [3568|9380]driver_rpc.cpp:124 CreateSessionToService: generate session_id= kFQHgzVZcjfTTXzP, this= 0x13bfdbc8480
+[2024-12-14 11:22:24.519] [PSS] [debug] [3568|9380]driver_rpc.cpp:139 CreateSessionToService: create session, req= session_param { session_id: "kFQHgzVZcjfTTXzP" description: "StreamingSceneRender" connection_type: kConnectionTcp event_streams { stream_id: "KHyIJoDvCfaFrePw" connection_config { connection_type: kConnectionTcp direction: kSendAndReceive channel: 1 } } }, this= 0x13bfdbc8480
+[2024-12-14 11:22:24.519] [PSS] [debug] [3568|9380]streaming_driver_interface_impl.cpp:793 CreateMediaSession: creating session, session_id= kFQHgzVZcjfTTXzP, this= 0x1397a303510
+[2024-12-14 11:22:24.520] [PSS] [debug] [3568|9380]driver_rpc.cpp:311 HandleCreateSessionResp: create session result= 0, this= 0x13bfdbc8480
+[2024-12-14 11:22:24.521] [PSS] [debug] [3568|9380]driver_rpc.cpp:233 UpdateSessionState: service update session state, request_id= 4293, request_msg= session_state: kSessionStateReady session_param { session_id: "kFQHgzVZcjfTTXzP" description: "StreamingSceneRender" connection_type: kConnectionTcp event_streams { stream_id: "KHyIJoDvCfaFrePw" connection_config { connection_type: kConnectionTcp direction: kSendAndReceive channel: 1 } } }, this= 0x13bfdbc8480
+[2024-12-14 11:22:24.521] [PSS] [debug] [3568|9380]streaming_driver_interface_impl.cpp:323 NotifyServiceUpdateSessionState: state= 2, this= 0x1397a303510
+[2024-12-14 11:22:24.521] [PSS] [debug] [3568|9380]driver_media_session.cpp:100 UpdateSessionState: state= 2, param 0000013C4335EE40, this= 0x13bfdfaca30
+[2024-12-14 11:22:24.521] [PSS] [info] [3568|9380]media_session_impl.cpp:44 SetRemoteParam: set remote param session_id= kFQHgzVZcjfTTXzP, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= KHyIJoDvCfaFrePw},, this= 0x13c32a4d110
+[2024-12-14 11:22:24.521] [PSS] [debug] [3568|9380]media_session_impl.cpp:543 NegotiateParam: input remote param session_id= kFQHgzVZcjfTTXzP, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= KHyIJoDvCfaFrePw},, this= 0x13c32a4d110
+[2024-12-14 11:22:24.521] [PSS] [debug] [3568|9380]media_session_impl.cpp:545 NegotiateParam: input local param session_id= kFQHgzVZcjfTTXzP, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= KHyIJoDvCfaFrePw},, this= 0x13c32a4d110
+[2024-12-14 11:22:24.521] [PSS] [debug] [3568|9380]media_session_impl.cpp:632 NegotiateParam: output local param session_id= kFQHgzVZcjfTTXzP, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= KHyIJoDvCfaFrePw},, this= 0x13c32a4d110
+[2024-12-14 11:22:24.521] [PSS] [debug] [3568|9380]media_session_impl.cpp:285 UpdateStream: update stream session_id= kFQHgzVZcjfTTXzP, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= KHyIJoDvCfaFrePw},, this= 0x13c32a4d110
+[2024-12-14 11:22:24.521] [PSS] [debug] [3568|9380]media_session_impl.cpp:506 UpdateEventStream: event stream existed, reset it, this= 0x13c32a4d110
+[2024-12-14 11:22:24.521] [PSS] [debug] [3568|9380]event_stream_impl.cpp:27 Reset: reset event stream= KHyIJoDvCfaFrePw, this= 0x13bfdbd5580
+[2024-12-14 11:22:24.521] [PSS] [debug] [3568|9380]media_transport.cpp:31 Reset: reset media_transport, this= 0x139789fd960
+[2024-12-14 11:22:24.521] [PSS] [debug] [3568|9380]media_transport.cpp:20 Init: try to add channel to external_transport,channel= 1, this= 0x139789fcfe0
+[2024-12-14 11:22:24.521] [PSS] [debug] [3568|9380]streaming_driver_interface_impl.cpp:435 AddMediaDataCallback: add transport channel= 1,callback= 0x139789fcfe0, this= 0x1397a303510
+[2024-12-14 11:22:24.521] [PSS] [debug] [3568|9380]media_transport.cpp:27 Init: init media_transport success, this= 0x139789fcfe0
+[2024-12-14 11:22:24.521] [PSS] [info] [3568|9380]event_stream_impl.cpp:16 Init: event stream stream_id= KHyIJoDvCfaFrePw, this= 0x13bfdbd5580
+[2024-12-14 11:22:24.521] [PSS] [debug] [3568|9380]event_stream_impl.cpp:23 Init: init event stream success, this= 0x13bfdbd5580
+[2024-12-14 11:22:24.521] [PSS] [debug] [3568|9380]event_stream_impl.cpp:106 SetMediaTransport: set media_transport to event stream, this= 0x13bfdbd5580
+[2024-12-14 11:22:24.521] [PSS] [debug] [3568|9380]media_transport.cpp:55 AddMediaDataCallback: callback= 0x13bfdbd5598, this= 0x139789fcfe0
+[2024-12-14 11:22:24.521] [PSS] [debug] [3568|9380]media_session_impl.cpp:537 UpdateEventStream: update event stream success, stream_id= KHyIJoDvCfaFrePw, this= 0x13c32a4d110
+[2024-12-14 11:22:24.521] [PSS] [debug] [3568|9380]media_session_impl.cpp:337 UpdateStream: update stream success, this= 0x13c32a4d110
+[2024-12-14 11:22:24.521] [PSS] [debug] [3568|9380]media_session_impl.cpp:63 SetRemoteParam: set remote param success, this= 0x13c32a4d110
+[2024-12-14 11:22:24.521] [PSS] [info] [3568|9380]media_session_impl.cpp:206 Start: start session, session_id= kFQHgzVZcjfTTXzP, this= 0x13c32a4d110
+[2024-12-14 11:22:24.521] [PSS] [debug] [3568|9380]media_session_impl.cpp:230 Start: start video_receive stream, this= 0x13c32a4d110
+[2024-12-14 11:22:24.521] [PSS] [debug] [3568|9380]event_stream_impl.cpp:43 Start: stream_id= KHyIJoDvCfaFrePw, this= 0x13bfdbd5580
+[2024-12-14 11:22:24.521] [PSS] [debug] [3568|9380]media_session_impl.cpp:238 Start: start session success, session_id= kFQHgzVZcjfTTXzP, this= 0x13c32a4d110
+[2024-12-14 11:22:24.521] [PSS] [debug] [3568|9380]driver_media_session.cpp:133 UpdateSessionState: update session config success, this= 0x13bfdfaca30
+[2024-12-14 11:22:24.521] [PSS] [debug] [3568|9380]streaming_driver_interface_impl.cpp:341 NotifyServiceUpdateSessionState: session is ready, report connect success, this= 0x1397a303510
+[2024-12-14 11:22:24.522] [PSS] [debug] [3568|1860]streaming_driver_interface_impl.cpp:719 HandleUpdateRenderState: state_type: kStateTypePrepared device_info { device_id: "hmd_zQTPt61O" device_name: "StreamingServiceAndroid" }, this= 0x1397a303510
+[2024-12-14 11:22:24.522] [PSS] [info] [3568|1860]streaming_driver_interface_impl.cpp:57 StartStreaming: (1920,1920), fps= 72, this= 0x1397a303510
+[2024-12-14 11:22:24.522] [PSS] [debug] [3568|9380]streaming_driver_interface_impl.cpp:522 InvokeStartStreaming: send start event to service, this= 0x1397a303510
+[2024-12-14 11:22:25.001] [PSS] [debug] [3568|1860]streaming_driver_interface_impl.cpp:719 HandleUpdateRenderState: state_type: kStateTypeStarted, this= 0x1397a303510
+[2024-12-14 11:22:25.001] [PSS] [debug] [3568|1860]streaming_driver_interface_impl.cpp:171 StartHandTracking: start hand tracking, this= 0x1397a303510
+[2024-12-14 11:22:25.001] [PSS] [error] [3568|1860]streaming_driver_interface_impl.cpp:190 RequestHandTrackingData: "hand_tracking not started", !hand_tracking_flag_, this= 0x1397a303510
+[2024-12-14 11:24:43.628] [PSS] [info] [3568|6464]streaming_driver_interface_impl.cpp:67 StopStreaming: stop streaming, this= 0x1397a303510
+[2024-12-14 11:24:43.628] [PSS] [debug] [3568|6464]streaming_driver_interface_impl.cpp:180 StopHandTracking: stop hand tracking, this= 0x1397a303510
+[2024-12-14 11:24:43.628] [PSS] [debug] [3568|9380]streaming_driver_interface_impl.cpp:534 InvokeStopStreaming: stop streaming, state= 2, this= 0x1397a303510
+[2024-12-14 11:24:43.629] [PSS] [error] [3568|9380]streaming_driver_interface_impl.cpp:584 InvokeChangeHandTrackingState: "streaming not started", streaming_state_ != StreamingState::kStreamingReady, this= 0x1397a303510
+[2024-12-14 11:24:43.629] [PSS] [debug] [3568|9380]streaming_driver_interface_impl.cpp:503 InvokeDisconnectFromService: disconnect from service, this= 0x1397a303510
+[2024-12-14 11:24:43.629] [PSS] [debug] [3568|9380]driver_media_session.cpp:68 Reset: reset client session, this= 0x13bfdfaca30
+[2024-12-14 11:24:43.629] [PSS] [info] [3568|9380]media_session_impl.cpp:258 Stop: stop session, session_id= kFQHgzVZcjfTTXzP, this= 0x13c32a4d110
+[2024-12-14 11:24:43.629] [PSS] [debug] [3568|9380]event_stream_impl.cpp:49 Stop: stream_id= KHyIJoDvCfaFrePw, this= 0x13bfdbd5580
+[2024-12-14 11:24:43.629] [PSS] [debug] [3568|9380]media_session_impl.cpp:281 Stop: stop session success, session_id= kFQHgzVZcjfTTXzP, this= 0x13c32a4d110
+[2024-12-14 11:24:43.629] [PSS] [debug] [3568|9380]event_stream_impl.cpp:27 Reset: reset event stream= KHyIJoDvCfaFrePw, this= 0x13bfdbd5580
+[2024-12-14 11:24:43.629] [PSS] [debug] [3568|9380]media_transport.cpp:31 Reset: reset media_transport, this= 0x139789fcfe0
+[2024-12-14 11:24:43.630] [PSS] [debug] [3568|9380]driver_media_session.cpp:78 Reset: reset client session success, this= 0x13bfdfaca30
+[2024-12-14 11:24:43.630] [PSS] [debug] [3568|9380]driver_media_session.cpp:68 Reset: reset client session, this= 0x13bfdfaca30
+[2024-12-14 11:24:43.630] [PSS] [debug] [3568|9380]driver_media_session.cpp:78 Reset: reset client session success, this= 0x13bfdfaca30
+[2024-12-14 11:24:43.630] [PSS] [debug] [3568|9380]driver_rpc.cpp:109 DisconnectFromService: disconnect from service, request_id= 2req = client_id: "bHE1lHKp3dVmCllg", this= 0x13bfdbc8480
+[2024-12-14 11:24:43.730] [PSS] [debug] [3568|9380]driver_rpc.cpp:294 HandleDisconnectFromServiceResp: disconnect from service result= -5, this= 0x13bfdbc8480
+[2024-12-14 11:24:43.730] [PSS] [error] [3568|9380]driver_rpc.cpp:299 HandleDisconnectFromServiceResp: rpc error, this= 0x13bfdbc8480
+[2024-12-14 11:24:43.730] [PSS] [debug] [3568|9380]streaming_driver_interface_impl.cpp:287 NotifyDisconnectFromServiceResult: disconnect from service result= -5, this= 0x1397a303510
+[2024-12-14 11:24:43.788] [PSS] [error] [3568|9380]rpc.cpp:283 HandleReceiveData: "response cannot find correspond request,", iter == inflight_requests_.end(), this= 0x13b47137d40
+[2024-12-14 11:24:43.788] [PSS] [error] [3568|18180]transport_client_tcp2.cpp:176 HandleReceiveDataResult: receive error= 10054, msg= 远程主机强迫关闭了一个现有的连接。
+[2024-12-14 11:24:43.788] [PSS] [error] [3568|18180]transport_client_tcp2.cpp:180 HandleReceiveDataResult: has been disconnected, this= 0x13c431c6980
+[2024-12-14 11:24:43.788] [PSS] [debug] [3568|9380]streaming_driver_interface_impl.cpp:699 HandleNetworkDisconnect: handle network disconnect,reason= 10054, this= 0x1397a303510
+[2024-12-14 11:25:12.627] [PSS] [debug] [3568|6464]streaming_driver_interface_impl.cpp:25 StreamingDriverInterfaceImpl: callback= 0x13bfe072200, this= 0x13c41f438b0
+[2024-12-14 11:25:12.627] [PSS] [debug] [3568|6464]streaming_driver_interface_impl.cpp:30 ~StreamingDriverInterfaceImpl: called, this= 0x1397a303510
+[2024-12-14 11:25:12.627] [PSS] [debug] [3568|6464]transport_client_tcp2.cpp:71 Stop: called, this= 0x13c431c6980
+[2024-12-14 11:25:12.627] [PSS] [debug] [3568|6464]streaming_driver_interface_impl.cpp:95 SetTrackingOrigin: tracking origin= FloorLevel, this= 0x13c41f438b0
+[2024-12-14 11:25:12.627] [PSS] [debug] [3568|6464]streaming_driver_interface_impl.cpp:39 ConnectToService: try to connect to service, this= 0x13c41f438b0
+[2024-12-14 11:25:12.627] [PSS] [error] [3568|1016]streaming_driver_interface_impl.cpp:572 InvokeSetTrackingOrigin: "invalid media session", !media_session_, this= 0x13c41f438b0
+[2024-12-14 11:25:12.627] [PSS] [debug] [3568|1016]streaming_driver_interface_impl.cpp:469 InvokeConnectToService: connect to service through the network, port= 54000, this= 0x13c41f438b0
+[2024-12-14 11:25:12.627] [PSS] [debug] [3568|1016]transport_client_tcp2.cpp:34 Start: buffer size(send\recv): 1048576\1048576, this= 0x13c431af470
+[2024-12-14 11:25:12.627] [PSS] [info] [3568|1016]transport_client_tcp2.cpp:58 Start: server= 127.0.0.1:54000, local=0.0.0.0:0, this= 0x13c431af470
+[2024-12-14 11:25:12.627] [PSS] [debug] [3568|1016]transport_data_receiver_raw.cpp:34 UpdateConfig: enable_channel= 1, enable_packet= 1, sink= 0x13c431af480, this= 0x13bfdbb4630
+[2024-12-14 11:25:12.628] [PSS] [debug] [3568|16280]streaming_driver_interface_impl.cpp:248 NotifyConnectResult: network connect to service result= 0, this= 0x13c41f438b0
+[2024-12-14 11:25:12.628] [PSS] [debug] [3568|16280]transport_client_tcp2.cpp:120 HandleConnect: local= 127.0.0.1:63682, this= 0x13c431af470
+[2024-12-14 11:25:12.628] [PSS] [debug] [3568|1016]streaming_driver_interface_impl.cpp:482 InvokeConnectToServiceByRpc: begin to connect to service by rpc, this= 0x13c41f438b0
+[2024-12-14 11:25:12.628] [PSS] [debug] [3568|1016]driver_rpc.cpp:87 ConnectToService: connect to service, request_id= 0, req = client_id: "ZB4OC1HNv3AcD3Zb" client_name: "StreamingDriverSDK" client_version: "2.0.2.11" client_description: "StreamingSceneRender", this= 0x13bfdbcbc80
+[2024-12-14 11:25:12.628] [PSS] [debug] [3568|1016]streaming_driver_interface_impl.cpp:499 InvokeConnectToServiceByRpc: connecting to service by rpc, local client_id= ZB4OC1HNv3AcD3Zb, this= 0x13c41f438b0
+[2024-12-14 11:25:12.628] [PSS] [debug] [3568|1016]driver_rpc.cpp:277 HandleConnectToServiceResp: connect to service result= 0, this= 0x13bfdbcbc80
+[2024-12-14 11:25:12.628] [PSS] [debug] [3568|1016]streaming_driver_interface_impl.cpp:270 NotifyConnectToServiceResult: connect to service result= 0, this= 0x13c41f438b0
+[2024-12-14 11:25:12.628] [PSS] [debug] [3568|1016]streaming_driver_interface_impl.cpp:753 CreateMediaSession: try to create session, this= 0x13c41f438b0
+[2024-12-14 11:25:12.628] [PSS] [debug] [3568|1016]driver_media_session.cpp:16 DriverMediaSession: session_id= HZbSApdySrfFNZaM, this= 0x13bfe144c30
+[2024-12-14 11:25:12.628] [PSS] [debug] [3568|1016]driver_media_session.cpp:28 Init: init media session, role= 0 session_id= HZbSApdySrfFNZaM, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= VcWfpsFaeYnWqIsj},, this= 0x13bfe144c30
+[2024-12-14 11:25:12.628] [PSS] [info] [3568|1016]media_session_impl.cpp:16 SetLocalParam: set local param session_id= HZbSApdySrfFNZaM, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= VcWfpsFaeYnWqIsj},, this= 0x13b46e93230
+[2024-12-14 11:25:12.628] [PSS] [debug] [3568|1016]media_session_impl.cpp:285 UpdateStream: update stream session_id= HZbSApdySrfFNZaM, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= VcWfpsFaeYnWqIsj},, this= 0x13b46e93230
+[2024-12-14 11:25:12.629] [PSS] [debug] [3568|1016]media_transport.cpp:20 Init: try to add channel to external_transport,channel= 1, this= 0x13975fc7800
+[2024-12-14 11:25:12.629] [PSS] [debug] [3568|1016]streaming_driver_interface_impl.cpp:435 AddMediaDataCallback: add transport channel= 1,callback= 0x13975fc7800, this= 0x13c41f438b0
+[2024-12-14 11:25:12.629] [PSS] [debug] [3568|1016]media_transport.cpp:27 Init: init media_transport success, this= 0x13975fc7800
+[2024-12-14 11:25:12.629] [PSS] [info] [3568|1016]event_stream_impl.cpp:16 Init: event stream stream_id= VcWfpsFaeYnWqIsj, this= 0x13bfdbc8480
+[2024-12-14 11:25:12.629] [PSS] [debug] [3568|1016]event_stream_impl.cpp:23 Init: init event stream success, this= 0x13bfdbc8480
+[2024-12-14 11:25:12.629] [PSS] [debug] [3568|1016]event_stream_impl.cpp:106 SetMediaTransport: set media_transport to event stream, this= 0x13bfdbc8480
+[2024-12-14 11:25:12.629] [PSS] [debug] [3568|1016]media_transport.cpp:55 AddMediaDataCallback: callback= 0x13bfdbc8498, this= 0x13975fc7800
+[2024-12-14 11:25:12.629] [PSS] [debug] [3568|1016]media_session_impl.cpp:537 UpdateEventStream: update event stream success, stream_id= VcWfpsFaeYnWqIsj, this= 0x13b46e93230
+[2024-12-14 11:25:12.629] [PSS] [debug] [3568|1016]media_session_impl.cpp:337 UpdateStream: update stream success, this= 0x13b46e93230
+[2024-12-14 11:25:12.629] [PSS] [debug] [3568|1016]media_session_impl.cpp:30 SetLocalParam: set local param success, this= 0x13b46e93230
+[2024-12-14 11:25:12.629] [PSS] [info] [3568|1016]media_session_impl.cpp:177 GetEventStream: stream_id= VcWfpsFaeYnWqIsj, this= 0x13b46e93230
+[2024-12-14 11:25:12.629] [PSS] [debug] [3568|1016]driver_media_session.cpp:64 Init: init media session success, this= 0x13bfe144c30
+[2024-12-14 11:25:12.629] [PSS] [debug] [3568|1016]driver_media_session.cpp:89 GetLocalParam: get local param, this= 0x13bfe144c30
+[2024-12-14 11:25:12.629] [PSS] [info] [3568|1016]media_session_impl.cpp:40 GetLocalParam: get local param, session_id= HZbSApdySrfFNZaM, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= VcWfpsFaeYnWqIsj},, this= 0x13b46e93230
+[2024-12-14 11:25:12.629] [PSS] [debug] [3568|1016]driver_rpc.cpp:124 CreateSessionToService: generate session_id= HZbSApdySrfFNZaM, this= 0x13bfdbcbc80
+[2024-12-14 11:25:12.629] [PSS] [debug] [3568|1016]driver_rpc.cpp:139 CreateSessionToService: create session, req= session_param { session_id: "HZbSApdySrfFNZaM" description: "StreamingSceneRender" connection_type: kConnectionTcp event_streams { stream_id: "VcWfpsFaeYnWqIsj" connection_config { connection_type: kConnectionTcp direction: kSendAndReceive channel: 1 } } }, this= 0x13bfdbcbc80
+[2024-12-14 11:25:12.629] [PSS] [debug] [3568|1016]streaming_driver_interface_impl.cpp:793 CreateMediaSession: creating session, session_id= HZbSApdySrfFNZaM, this= 0x13c41f438b0
+[2024-12-14 11:25:12.629] [PSS] [debug] [3568|1016]driver_rpc.cpp:311 HandleCreateSessionResp: create session result= 0, this= 0x13bfdbcbc80
+[2024-12-14 11:25:12.630] [PSS] [debug] [3568|1016]driver_rpc.cpp:233 UpdateSessionState: service update session state, request_id= 5317, request_msg= session_state: kSessionStateReady session_param { session_id: "HZbSApdySrfFNZaM" description: "StreamingSceneRender" connection_type: kConnectionTcp event_streams { stream_id: "VcWfpsFaeYnWqIsj" connection_config { connection_type: kConnectionTcp direction: kSendAndReceive channel: 1 } } }, this= 0x13bfdbcbc80
+[2024-12-14 11:25:12.630] [PSS] [debug] [3568|1016]streaming_driver_interface_impl.cpp:323 NotifyServiceUpdateSessionState: state= 2, this= 0x13c41f438b0
+[2024-12-14 11:25:12.630] [PSS] [debug] [3568|1016]driver_media_session.cpp:100 UpdateSessionState: state= 2, param 0000013C41F8A5F0, this= 0x13bfe144c30
+[2024-12-14 11:25:12.630] [PSS] [info] [3568|1016]media_session_impl.cpp:44 SetRemoteParam: set remote param session_id= HZbSApdySrfFNZaM, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= VcWfpsFaeYnWqIsj},, this= 0x13b46e93230
+[2024-12-14 11:25:12.630] [PSS] [debug] [3568|1016]media_session_impl.cpp:543 NegotiateParam: input remote param session_id= HZbSApdySrfFNZaM, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= VcWfpsFaeYnWqIsj},, this= 0x13b46e93230
+[2024-12-14 11:25:12.630] [PSS] [debug] [3568|1016]media_session_impl.cpp:545 NegotiateParam: input local param session_id= HZbSApdySrfFNZaM, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= VcWfpsFaeYnWqIsj},, this= 0x13b46e93230
+[2024-12-14 11:25:12.630] [PSS] [debug] [3568|1016]media_session_impl.cpp:632 NegotiateParam: output local param session_id= HZbSApdySrfFNZaM, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= VcWfpsFaeYnWqIsj},, this= 0x13b46e93230
+[2024-12-14 11:25:12.630] [PSS] [debug] [3568|1016]media_session_impl.cpp:285 UpdateStream: update stream session_id= HZbSApdySrfFNZaM, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= VcWfpsFaeYnWqIsj},, this= 0x13b46e93230
+[2024-12-14 11:25:12.630] [PSS] [debug] [3568|1016]media_session_impl.cpp:506 UpdateEventStream: event stream existed, reset it, this= 0x13b46e93230
+[2024-12-14 11:25:12.630] [PSS] [debug] [3568|1016]event_stream_impl.cpp:27 Reset: reset event stream= VcWfpsFaeYnWqIsj, this= 0x13bfdbc8480
+[2024-12-14 11:25:12.630] [PSS] [debug] [3568|1016]media_transport.cpp:31 Reset: reset media_transport, this= 0x13975fc7800
+[2024-12-14 11:25:12.630] [PSS] [debug] [3568|1016]media_transport.cpp:20 Init: try to add channel to external_transport,channel= 1, this= 0x13975fc6760
+[2024-12-14 11:25:12.630] [PSS] [debug] [3568|1016]streaming_driver_interface_impl.cpp:435 AddMediaDataCallback: add transport channel= 1,callback= 0x13975fc6760, this= 0x13c41f438b0
+[2024-12-14 11:25:12.630] [PSS] [debug] [3568|1016]media_transport.cpp:27 Init: init media_transport success, this= 0x13975fc6760
+[2024-12-14 11:25:12.630] [PSS] [info] [3568|1016]event_stream_impl.cpp:16 Init: event stream stream_id= VcWfpsFaeYnWqIsj, this= 0x13bfdbc8480
+[2024-12-14 11:25:12.630] [PSS] [debug] [3568|1016]event_stream_impl.cpp:23 Init: init event stream success, this= 0x13bfdbc8480
+[2024-12-14 11:25:12.630] [PSS] [debug] [3568|1016]event_stream_impl.cpp:106 SetMediaTransport: set media_transport to event stream, this= 0x13bfdbc8480
+[2024-12-14 11:25:12.630] [PSS] [debug] [3568|1016]media_transport.cpp:55 AddMediaDataCallback: callback= 0x13bfdbc8498, this= 0x13975fc6760
+[2024-12-14 11:25:12.630] [PSS] [debug] [3568|1016]media_session_impl.cpp:537 UpdateEventStream: update event stream success, stream_id= VcWfpsFaeYnWqIsj, this= 0x13b46e93230
+[2024-12-14 11:25:12.630] [PSS] [debug] [3568|1016]media_session_impl.cpp:337 UpdateStream: update stream success, this= 0x13b46e93230
+[2024-12-14 11:25:12.630] [PSS] [debug] [3568|1016]media_session_impl.cpp:63 SetRemoteParam: set remote param success, this= 0x13b46e93230
+[2024-12-14 11:25:12.630] [PSS] [info] [3568|1016]media_session_impl.cpp:206 Start: start session, session_id= HZbSApdySrfFNZaM, this= 0x13b46e93230
+[2024-12-14 11:25:12.630] [PSS] [debug] [3568|1016]media_session_impl.cpp:230 Start: start video_receive stream, this= 0x13b46e93230
+[2024-12-14 11:25:12.630] [PSS] [debug] [3568|1016]event_stream_impl.cpp:43 Start: stream_id= VcWfpsFaeYnWqIsj, this= 0x13bfdbc8480
+[2024-12-14 11:25:12.630] [PSS] [debug] [3568|1016]media_session_impl.cpp:238 Start: start session success, session_id= HZbSApdySrfFNZaM, this= 0x13b46e93230
+[2024-12-14 11:25:12.630] [PSS] [debug] [3568|1016]driver_media_session.cpp:133 UpdateSessionState: update session config success, this= 0x13bfe144c30
+[2024-12-14 11:25:12.630] [PSS] [debug] [3568|1016]streaming_driver_interface_impl.cpp:341 NotifyServiceUpdateSessionState: session is ready, report connect success, this= 0x13c41f438b0
+[2024-12-14 11:25:12.630] [PSS] [debug] [3568|11040]streaming_driver_interface_impl.cpp:719 HandleUpdateRenderState: state_type: kStateTypePrepared device_info { device_id: "hmd_zQTPt61O" device_name: "StreamingServiceAndroid" }, this= 0x13c41f438b0
+[2024-12-14 11:25:12.631] [PSS] [info] [3568|11040]streaming_driver_interface_impl.cpp:57 StartStreaming: (1920,1920), fps= 72, this= 0x13c41f438b0
+[2024-12-14 11:25:12.631] [PSS] [debug] [3568|1016]streaming_driver_interface_impl.cpp:522 InvokeStartStreaming: send start event to service, this= 0x13c41f438b0
+[2024-12-14 11:25:13.027] [PSS] [debug] [3568|11040]streaming_driver_interface_impl.cpp:719 HandleUpdateRenderState: state_type: kStateTypeStarted, this= 0x13c41f438b0
+[2024-12-14 11:25:13.027] [PSS] [debug] [3568|11040]streaming_driver_interface_impl.cpp:171 StartHandTracking: start hand tracking, this= 0x13c41f438b0
+[2024-12-14 11:25:13.027] [PSS] [error] [3568|11040]streaming_driver_interface_impl.cpp:190 RequestHandTrackingData: "hand_tracking not started", !hand_tracking_flag_, this= 0x13c41f438b0
+[2024-12-14 11:26:18.638] [PSS] [info] [3568|6464]streaming_driver_interface_impl.cpp:67 StopStreaming: stop streaming, this= 0x13c41f438b0
+[2024-12-14 11:26:18.638] [PSS] [debug] [3568|6464]streaming_driver_interface_impl.cpp:180 StopHandTracking: stop hand tracking, this= 0x13c41f438b0
+[2024-12-14 11:26:18.638] [PSS] [debug] [3568|1016]streaming_driver_interface_impl.cpp:534 InvokeStopStreaming: stop streaming, state= 2, this= 0x13c41f438b0
+[2024-12-14 11:26:18.639] [PSS] [error] [3568|1016]streaming_driver_interface_impl.cpp:584 InvokeChangeHandTrackingState: "streaming not started", streaming_state_ != StreamingState::kStreamingReady, this= 0x13c41f438b0
+[2024-12-14 11:26:18.639] [PSS] [debug] [3568|1016]streaming_driver_interface_impl.cpp:503 InvokeDisconnectFromService: disconnect from service, this= 0x13c41f438b0
+[2024-12-14 11:26:18.639] [PSS] [debug] [3568|1016]driver_media_session.cpp:68 Reset: reset client session, this= 0x13bfe144c30
+[2024-12-14 11:26:18.639] [PSS] [info] [3568|1016]media_session_impl.cpp:258 Stop: stop session, session_id= HZbSApdySrfFNZaM, this= 0x13b46e93230
+[2024-12-14 11:26:18.639] [PSS] [debug] [3568|1016]event_stream_impl.cpp:49 Stop: stream_id= VcWfpsFaeYnWqIsj, this= 0x13bfdbc8480
+[2024-12-14 11:26:18.639] [PSS] [debug] [3568|1016]media_session_impl.cpp:281 Stop: stop session success, session_id= HZbSApdySrfFNZaM, this= 0x13b46e93230
+[2024-12-14 11:26:18.639] [PSS] [debug] [3568|1016]event_stream_impl.cpp:27 Reset: reset event stream= VcWfpsFaeYnWqIsj, this= 0x13bfdbc8480
+[2024-12-14 11:26:18.639] [PSS] [debug] [3568|1016]media_transport.cpp:31 Reset: reset media_transport, this= 0x13975fc6760
+[2024-12-14 11:26:18.640] [PSS] [debug] [3568|1016]driver_media_session.cpp:78 Reset: reset client session success, this= 0x13bfe144c30
+[2024-12-14 11:26:18.640] [PSS] [debug] [3568|1016]driver_media_session.cpp:68 Reset: reset client session, this= 0x13bfe144c30
+[2024-12-14 11:26:18.640] [PSS] [debug] [3568|1016]driver_media_session.cpp:78 Reset: reset client session success, this= 0x13bfe144c30
+[2024-12-14 11:26:18.640] [PSS] [debug] [3568|1016]driver_rpc.cpp:109 DisconnectFromService: disconnect from service, request_id= 2req = client_id: "ZB4OC1HNv3AcD3Zb", this= 0x13bfdbcbc80
+[2024-12-14 11:26:18.741] [PSS] [debug] [3568|1016]driver_rpc.cpp:294 HandleDisconnectFromServiceResp: disconnect from service result= -5, this= 0x13bfdbcbc80
+[2024-12-14 11:26:18.741] [PSS] [error] [3568|1016]driver_rpc.cpp:299 HandleDisconnectFromServiceResp: rpc error, this= 0x13bfdbcbc80
+[2024-12-14 11:26:18.741] [PSS] [debug] [3568|1016]streaming_driver_interface_impl.cpp:287 NotifyDisconnectFromServiceResult: disconnect from service result= -5, this= 0x13c41f438b0
+[2024-12-14 11:26:18.858] [PSS] [error] [3568|1016]rpc.cpp:283 HandleReceiveData: "response cannot find correspond request,", iter == inflight_requests_.end(), this= 0x13c0bab2ad0
+[2024-12-14 11:26:18.858] [PSS] [error] [3568|16280]transport_client_tcp2.cpp:176 HandleReceiveDataResult: receive error= 10054, msg= 远程主机强迫关闭了一个现有的连接。
+[2024-12-14 11:26:18.858] [PSS] [error] [3568|16280]transport_client_tcp2.cpp:180 HandleReceiveDataResult: has been disconnected, this= 0x13c431af470
+[2024-12-14 11:26:18.858] [PSS] [debug] [3568|1016]streaming_driver_interface_impl.cpp:699 HandleNetworkDisconnect: handle network disconnect,reason= 10054, this= 0x13c41f438b0
+[2024-12-14 11:26:37.938] [PSS] [debug] [3568|6464]streaming_driver_interface_impl.cpp:25 StreamingDriverInterfaceImpl: callback= 0x13bfe075950, this= 0x13b44ddfb60
+[2024-12-14 11:26:37.938] [PSS] [debug] [3568|6464]streaming_driver_interface_impl.cpp:30 ~StreamingDriverInterfaceImpl: called, this= 0x13c41f438b0
+[2024-12-14 11:26:37.938] [PSS] [debug] [3568|6464]transport_client_tcp2.cpp:71 Stop: called, this= 0x13c431af470
+[2024-12-14 11:26:37.939] [PSS] [debug] [3568|6464]streaming_driver_interface_impl.cpp:95 SetTrackingOrigin: tracking origin= FloorLevel, this= 0x13b44ddfb60
+[2024-12-14 11:26:37.939] [PSS] [debug] [3568|6464]streaming_driver_interface_impl.cpp:39 ConnectToService: try to connect to service, this= 0x13b44ddfb60
+[2024-12-14 11:26:37.939] [PSS] [error] [3568|19244]streaming_driver_interface_impl.cpp:572 InvokeSetTrackingOrigin: "invalid media session", !media_session_, this= 0x13b44ddfb60
+[2024-12-14 11:26:37.939] [PSS] [debug] [3568|19244]streaming_driver_interface_impl.cpp:469 InvokeConnectToService: connect to service through the network, port= 54000, this= 0x13b44ddfb60
+[2024-12-14 11:26:37.939] [PSS] [debug] [3568|19244]transport_client_tcp2.cpp:34 Start: buffer size(send\recv): 1048576\1048576, this= 0x13c431cd920
+[2024-12-14 11:26:37.939] [PSS] [info] [3568|19244]transport_client_tcp2.cpp:58 Start: server= 127.0.0.1:54000, local=0.0.0.0:0, this= 0x13c431cd920
+[2024-12-14 11:26:37.939] [PSS] [debug] [3568|19244]transport_data_receiver_raw.cpp:34 UpdateConfig: enable_channel= 1, enable_packet= 1, sink= 0x13c431cd930, this= 0x13c32cc8dc0
+[2024-12-14 11:26:37.940] [PSS] [debug] [3568|11120]streaming_driver_interface_impl.cpp:248 NotifyConnectResult: network connect to service result= 0, this= 0x13b44ddfb60
+[2024-12-14 11:26:37.940] [PSS] [debug] [3568|11120]transport_client_tcp2.cpp:120 HandleConnect: local= 127.0.0.1:63332, this= 0x13c431cd920
+[2024-12-14 11:26:37.940] [PSS] [debug] [3568|19244]streaming_driver_interface_impl.cpp:482 InvokeConnectToServiceByRpc: begin to connect to service by rpc, this= 0x13b44ddfb60
+[2024-12-14 11:26:37.940] [PSS] [debug] [3568|19244]driver_rpc.cpp:87 ConnectToService: connect to service, request_id= 0, req = client_id: "DgZCOf2Gy38pXucf" client_name: "StreamingDriverSDK" client_version: "2.0.2.11" client_description: "StreamingSceneRender", this= 0x13bfdbd0d80
+[2024-12-14 11:26:37.940] [PSS] [debug] [3568|19244]streaming_driver_interface_impl.cpp:499 InvokeConnectToServiceByRpc: connecting to service by rpc, local client_id= DgZCOf2Gy38pXucf, this= 0x13b44ddfb60
+[2024-12-14 11:26:37.941] [PSS] [debug] [3568|19244]driver_rpc.cpp:277 HandleConnectToServiceResp: connect to service result= 0, this= 0x13bfdbd0d80
+[2024-12-14 11:26:37.941] [PSS] [debug] [3568|19244]streaming_driver_interface_impl.cpp:270 NotifyConnectToServiceResult: connect to service result= 0, this= 0x13b44ddfb60
+[2024-12-14 11:26:37.941] [PSS] [debug] [3568|19244]streaming_driver_interface_impl.cpp:753 CreateMediaSession: try to create session, this= 0x13b44ddfb60
+[2024-12-14 11:26:37.941] [PSS] [debug] [3568|19244]driver_media_session.cpp:16 DriverMediaSession: session_id= qsMEYWdSjIuifQPy, this= 0x1397931b8c0
+[2024-12-14 11:26:37.941] [PSS] [debug] [3568|19244]driver_media_session.cpp:28 Init: init media session, role= 0 session_id= qsMEYWdSjIuifQPy, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= uEPaxrlUOFNKTGHA},, this= 0x1397931b8c0
+[2024-12-14 11:26:37.941] [PSS] [info] [3568|19244]media_session_impl.cpp:16 SetLocalParam: set local param session_id= qsMEYWdSjIuifQPy, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= uEPaxrlUOFNKTGHA},, this= 0x13c32a50fa0
+[2024-12-14 11:26:37.941] [PSS] [debug] [3568|19244]media_session_impl.cpp:285 UpdateStream: update stream session_id= qsMEYWdSjIuifQPy, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= uEPaxrlUOFNKTGHA},, this= 0x13c32a50fa0
+[2024-12-14 11:26:37.941] [PSS] [debug] [3568|19244]media_transport.cpp:20 Init: try to add channel to external_transport,channel= 1, this= 0x139789fc070
+[2024-12-14 11:26:37.941] [PSS] [debug] [3568|19244]streaming_driver_interface_impl.cpp:435 AddMediaDataCallback: add transport channel= 1,callback= 0x139789fc070, this= 0x13b44ddfb60
+[2024-12-14 11:26:37.941] [PSS] [debug] [3568|19244]media_transport.cpp:27 Init: init media_transport success, this= 0x139789fc070
+[2024-12-14 11:26:37.941] [PSS] [info] [3568|19244]event_stream_impl.cpp:16 Init: event stream stream_id= uEPaxrlUOFNKTGHA, this= 0x13bfdbce580
+[2024-12-14 11:26:37.941] [PSS] [debug] [3568|19244]event_stream_impl.cpp:23 Init: init event stream success, this= 0x13bfdbce580
+[2024-12-14 11:26:37.941] [PSS] [debug] [3568|19244]event_stream_impl.cpp:106 SetMediaTransport: set media_transport to event stream, this= 0x13bfdbce580
+[2024-12-14 11:26:37.941] [PSS] [debug] [3568|19244]media_transport.cpp:55 AddMediaDataCallback: callback= 0x13bfdbce598, this= 0x139789fc070
+[2024-12-14 11:26:37.941] [PSS] [debug] [3568|19244]media_session_impl.cpp:537 UpdateEventStream: update event stream success, stream_id= uEPaxrlUOFNKTGHA, this= 0x13c32a50fa0
+[2024-12-14 11:26:37.941] [PSS] [debug] [3568|19244]media_session_impl.cpp:337 UpdateStream: update stream success, this= 0x13c32a50fa0
+[2024-12-14 11:26:37.941] [PSS] [debug] [3568|19244]media_session_impl.cpp:30 SetLocalParam: set local param success, this= 0x13c32a50fa0
+[2024-12-14 11:26:37.941] [PSS] [info] [3568|19244]media_session_impl.cpp:177 GetEventStream: stream_id= uEPaxrlUOFNKTGHA, this= 0x13c32a50fa0
+[2024-12-14 11:26:37.941] [PSS] [debug] [3568|19244]driver_media_session.cpp:64 Init: init media session success, this= 0x1397931b8c0
+[2024-12-14 11:26:37.941] [PSS] [debug] [3568|19244]driver_media_session.cpp:89 GetLocalParam: get local param, this= 0x1397931b8c0
+[2024-12-14 11:26:37.941] [PSS] [info] [3568|19244]media_session_impl.cpp:40 GetLocalParam: get local param, session_id= qsMEYWdSjIuifQPy, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= uEPaxrlUOFNKTGHA},, this= 0x13c32a50fa0
+[2024-12-14 11:26:37.941] [PSS] [debug] [3568|19244]driver_rpc.cpp:124 CreateSessionToService: generate session_id= qsMEYWdSjIuifQPy, this= 0x13bfdbd0d80
+[2024-12-14 11:26:37.941] [PSS] [debug] [3568|19244]driver_rpc.cpp:139 CreateSessionToService: create session, req= session_param { session_id: "qsMEYWdSjIuifQPy" description: "StreamingSceneRender" connection_type: kConnectionTcp event_streams { stream_id: "uEPaxrlUOFNKTGHA" connection_config { connection_type: kConnectionTcp direction: kSendAndReceive channel: 1 } } }, this= 0x13bfdbd0d80
+[2024-12-14 11:26:37.942] [PSS] [debug] [3568|19244]streaming_driver_interface_impl.cpp:793 CreateMediaSession: creating session, session_id= qsMEYWdSjIuifQPy, this= 0x13b44ddfb60
+[2024-12-14 11:26:37.942] [PSS] [debug] [3568|19244]driver_rpc.cpp:311 HandleCreateSessionResp: create session result= 0, this= 0x13bfdbd0d80
+[2024-12-14 11:26:37.943] [PSS] [debug] [3568|19244]driver_rpc.cpp:233 UpdateSessionState: service update session state, request_id= 6350, request_msg= session_state: kSessionStateReady session_param { session_id: "qsMEYWdSjIuifQPy" description: "StreamingSceneRender" connection_type: kConnectionTcp event_streams { stream_id: "uEPaxrlUOFNKTGHA" connection_config { connection_type: kConnectionTcp direction: kSendAndReceive channel: 1 } } }, this= 0x13bfdbd0d80
+[2024-12-14 11:26:37.943] [PSS] [debug] [3568|19244]streaming_driver_interface_impl.cpp:323 NotifyServiceUpdateSessionState: state= 2, this= 0x13b44ddfb60
+[2024-12-14 11:26:37.943] [PSS] [debug] [3568|19244]driver_media_session.cpp:100 UpdateSessionState: state= 2, param 0000013B4591A090, this= 0x1397931b8c0
+[2024-12-14 11:26:37.943] [PSS] [info] [3568|19244]media_session_impl.cpp:44 SetRemoteParam: set remote param session_id= qsMEYWdSjIuifQPy, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= uEPaxrlUOFNKTGHA},, this= 0x13c32a50fa0
+[2024-12-14 11:26:37.943] [PSS] [debug] [3568|19244]media_session_impl.cpp:543 NegotiateParam: input remote param session_id= qsMEYWdSjIuifQPy, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= uEPaxrlUOFNKTGHA},, this= 0x13c32a50fa0
+[2024-12-14 11:26:37.943] [PSS] [debug] [3568|19244]media_session_impl.cpp:545 NegotiateParam: input local param session_id= qsMEYWdSjIuifQPy, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= uEPaxrlUOFNKTGHA},, this= 0x13c32a50fa0
+[2024-12-14 11:26:37.943] [PSS] [debug] [3568|19244]media_session_impl.cpp:632 NegotiateParam: output local param session_id= qsMEYWdSjIuifQPy, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= uEPaxrlUOFNKTGHA},, this= 0x13c32a50fa0
+[2024-12-14 11:26:37.943] [PSS] [debug] [3568|19244]media_session_impl.cpp:285 UpdateStream: update stream session_id= qsMEYWdSjIuifQPy, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= uEPaxrlUOFNKTGHA},, this= 0x13c32a50fa0
+[2024-12-14 11:26:37.943] [PSS] [debug] [3568|19244]media_session_impl.cpp:506 UpdateEventStream: event stream existed, reset it, this= 0x13c32a50fa0
+[2024-12-14 11:26:37.943] [PSS] [debug] [3568|19244]event_stream_impl.cpp:27 Reset: reset event stream= uEPaxrlUOFNKTGHA, this= 0x13bfdbce580
+[2024-12-14 11:26:37.943] [PSS] [debug] [3568|19244]media_transport.cpp:31 Reset: reset media_transport, this= 0x139789fc070
+[2024-12-14 11:26:37.943] [PSS] [debug] [3568|19244]media_transport.cpp:20 Init: try to add channel to external_transport,channel= 1, this= 0x139789fc8c0
+[2024-12-14 11:26:37.943] [PSS] [debug] [3568|19244]streaming_driver_interface_impl.cpp:435 AddMediaDataCallback: add transport channel= 1,callback= 0x139789fc8c0, this= 0x13b44ddfb60
+[2024-12-14 11:26:37.943] [PSS] [debug] [3568|19244]media_transport.cpp:27 Init: init media_transport success, this= 0x139789fc8c0
+[2024-12-14 11:26:37.943] [PSS] [info] [3568|19244]event_stream_impl.cpp:16 Init: event stream stream_id= uEPaxrlUOFNKTGHA, this= 0x13bfdbce580
+[2024-12-14 11:26:37.943] [PSS] [debug] [3568|19244]event_stream_impl.cpp:23 Init: init event stream success, this= 0x13bfdbce580
+[2024-12-14 11:26:37.943] [PSS] [debug] [3568|19244]event_stream_impl.cpp:106 SetMediaTransport: set media_transport to event stream, this= 0x13bfdbce580
+[2024-12-14 11:26:37.943] [PSS] [debug] [3568|19244]media_transport.cpp:55 AddMediaDataCallback: callback= 0x13bfdbce598, this= 0x139789fc8c0
+[2024-12-14 11:26:37.943] [PSS] [debug] [3568|19244]media_session_impl.cpp:537 UpdateEventStream: update event stream success, stream_id= uEPaxrlUOFNKTGHA, this= 0x13c32a50fa0
+[2024-12-14 11:26:37.943] [PSS] [debug] [3568|19244]media_session_impl.cpp:337 UpdateStream: update stream success, this= 0x13c32a50fa0
+[2024-12-14 11:26:37.943] [PSS] [debug] [3568|19244]media_session_impl.cpp:63 SetRemoteParam: set remote param success, this= 0x13c32a50fa0
+[2024-12-14 11:26:37.943] [PSS] [info] [3568|19244]media_session_impl.cpp:206 Start: start session, session_id= qsMEYWdSjIuifQPy, this= 0x13c32a50fa0
+[2024-12-14 11:26:37.943] [PSS] [debug] [3568|19244]media_session_impl.cpp:230 Start: start video_receive stream, this= 0x13c32a50fa0
+[2024-12-14 11:26:37.943] [PSS] [debug] [3568|19244]event_stream_impl.cpp:43 Start: stream_id= uEPaxrlUOFNKTGHA, this= 0x13bfdbce580
+[2024-12-14 11:26:37.943] [PSS] [debug] [3568|19244]media_session_impl.cpp:238 Start: start session success, session_id= qsMEYWdSjIuifQPy, this= 0x13c32a50fa0
+[2024-12-14 11:26:37.944] [PSS] [debug] [3568|19244]driver_media_session.cpp:133 UpdateSessionState: update session config success, this= 0x1397931b8c0
+[2024-12-14 11:26:37.944] [PSS] [debug] [3568|19244]streaming_driver_interface_impl.cpp:341 NotifyServiceUpdateSessionState: session is ready, report connect success, this= 0x13b44ddfb60
+[2024-12-14 11:26:37.944] [PSS] [debug] [3568|2960]streaming_driver_interface_impl.cpp:719 HandleUpdateRenderState: state_type: kStateTypePrepared device_info { device_id: "hmd_zQTPt61O" device_name: "StreamingServiceAndroid" }, this= 0x13b44ddfb60
+[2024-12-14 11:26:37.944] [PSS] [info] [3568|2960]streaming_driver_interface_impl.cpp:57 StartStreaming: (1920,1920), fps= 72, this= 0x13b44ddfb60
+[2024-12-14 11:26:37.944] [PSS] [debug] [3568|19244]streaming_driver_interface_impl.cpp:522 InvokeStartStreaming: send start event to service, this= 0x13b44ddfb60
+[2024-12-14 11:26:38.529] [PSS] [debug] [3568|2960]streaming_driver_interface_impl.cpp:719 HandleUpdateRenderState: state_type: kStateTypeStarted, this= 0x13b44ddfb60
+[2024-12-14 11:26:38.529] [PSS] [debug] [3568|2960]streaming_driver_interface_impl.cpp:171 StartHandTracking: start hand tracking, this= 0x13b44ddfb60
+[2024-12-14 11:26:38.529] [PSS] [error] [3568|2960]streaming_driver_interface_impl.cpp:190 RequestHandTrackingData: "hand_tracking not started", !hand_tracking_flag_, this= 0x13b44ddfb60
+[2024-12-14 11:26:55.373] [PSS] [info] [3568|6464]streaming_driver_interface_impl.cpp:67 StopStreaming: stop streaming, this= 0x13b44ddfb60
+[2024-12-14 11:26:55.374] [PSS] [debug] [3568|6464]streaming_driver_interface_impl.cpp:180 StopHandTracking: stop hand tracking, this= 0x13b44ddfb60
+[2024-12-14 11:26:55.374] [PSS] [debug] [3568|19244]streaming_driver_interface_impl.cpp:534 InvokeStopStreaming: stop streaming, state= 2, this= 0x13b44ddfb60
+[2024-12-14 11:26:55.374] [PSS] [error] [3568|19244]streaming_driver_interface_impl.cpp:584 InvokeChangeHandTrackingState: "streaming not started", streaming_state_ != StreamingState::kStreamingReady, this= 0x13b44ddfb60
+[2024-12-14 11:26:55.375] [PSS] [debug] [3568|19244]streaming_driver_interface_impl.cpp:503 InvokeDisconnectFromService: disconnect from service, this= 0x13b44ddfb60
+[2024-12-14 11:26:55.375] [PSS] [debug] [3568|19244]driver_media_session.cpp:68 Reset: reset client session, this= 0x1397931b8c0
+[2024-12-14 11:26:55.375] [PSS] [info] [3568|19244]media_session_impl.cpp:258 Stop: stop session, session_id= qsMEYWdSjIuifQPy, this= 0x13c32a50fa0
+[2024-12-14 11:26:55.375] [PSS] [debug] [3568|19244]event_stream_impl.cpp:49 Stop: stream_id= uEPaxrlUOFNKTGHA, this= 0x13bfdbce580
+[2024-12-14 11:26:55.375] [PSS] [debug] [3568|19244]media_session_impl.cpp:281 Stop: stop session success, session_id= qsMEYWdSjIuifQPy, this= 0x13c32a50fa0
+[2024-12-14 11:26:55.375] [PSS] [debug] [3568|19244]event_stream_impl.cpp:27 Reset: reset event stream= uEPaxrlUOFNKTGHA, this= 0x13bfdbce580
+[2024-12-14 11:26:55.375] [PSS] [debug] [3568|19244]media_transport.cpp:31 Reset: reset media_transport, this= 0x139789fc8c0
+[2024-12-14 11:26:55.376] [PSS] [debug] [3568|19244]driver_media_session.cpp:78 Reset: reset client session success, this= 0x1397931b8c0
+[2024-12-14 11:26:55.376] [PSS] [debug] [3568|19244]driver_media_session.cpp:68 Reset: reset client session, this= 0x1397931b8c0
+[2024-12-14 11:26:55.376] [PSS] [debug] [3568|19244]driver_media_session.cpp:78 Reset: reset client session success, this= 0x1397931b8c0
+[2024-12-14 11:26:55.376] [PSS] [debug] [3568|19244]driver_rpc.cpp:109 DisconnectFromService: disconnect from service, request_id= 2req = client_id: "DgZCOf2Gy38pXucf", this= 0x13bfdbd0d80
+[2024-12-14 11:26:55.476] [PSS] [debug] [3568|19244]driver_rpc.cpp:294 HandleDisconnectFromServiceResp: disconnect from service result= -5, this= 0x13bfdbd0d80
+[2024-12-14 11:26:55.476] [PSS] [error] [3568|19244]driver_rpc.cpp:299 HandleDisconnectFromServiceResp: rpc error, this= 0x13bfdbd0d80
+[2024-12-14 11:26:55.476] [PSS] [debug] [3568|19244]streaming_driver_interface_impl.cpp:287 NotifyDisconnectFromServiceResult: disconnect from service result= -5, this= 0x13b44ddfb60
+[2024-12-14 11:26:55.574] [PSS] [error] [3568|19244]rpc.cpp:283 HandleReceiveData: "response cannot find correspond request,", iter == inflight_requests_.end(), this= 0x13964ac9770
+[2024-12-14 11:26:55.574] [PSS] [error] [3568|11120]transport_client_tcp2.cpp:176 HandleReceiveDataResult: receive error= 10054, msg= 远程主机强迫关闭了一个现有的连接。
+[2024-12-14 11:26:55.574] [PSS] [error] [3568|11120]transport_client_tcp2.cpp:180 HandleReceiveDataResult: has been disconnected, this= 0x13c431cd920
+[2024-12-14 11:26:55.574] [PSS] [debug] [3568|19244]streaming_driver_interface_impl.cpp:699 HandleNetworkDisconnect: handle network disconnect,reason= 10054, this= 0x13b44ddfb60
+[2024-12-14 11:27:03.128] [PSS] [debug] [3568|6464]streaming_driver_interface_impl.cpp:25 StreamingDriverInterfaceImpl: callback= 0x13c426ed180, this= 0x13c41f438b0
+[2024-12-14 11:27:03.128] [PSS] [debug] [3568|6464]streaming_driver_interface_impl.cpp:30 ~StreamingDriverInterfaceImpl: called, this= 0x13b44ddfb60
+[2024-12-14 11:27:03.128] [PSS] [debug] [3568|6464]transport_client_tcp2.cpp:71 Stop: called, this= 0x13c431cd920
+[2024-12-14 11:27:03.129] [PSS] [debug] [3568|6464]streaming_driver_interface_impl.cpp:95 SetTrackingOrigin: tracking origin= FloorLevel, this= 0x13c41f438b0
+[2024-12-14 11:27:03.129] [PSS] [debug] [3568|6464]streaming_driver_interface_impl.cpp:39 ConnectToService: try to connect to service, this= 0x13c41f438b0
+[2024-12-14 11:27:03.129] [PSS] [error] [3568|7364]streaming_driver_interface_impl.cpp:572 InvokeSetTrackingOrigin: "invalid media session", !media_session_, this= 0x13c41f438b0
+[2024-12-14 11:27:03.129] [PSS] [debug] [3568|7364]streaming_driver_interface_impl.cpp:469 InvokeConnectToService: connect to service through the network, port= 54000, this= 0x13c41f438b0
+[2024-12-14 11:27:03.129] [PSS] [debug] [3568|7364]transport_client_tcp2.cpp:34 Start: buffer size(send\recv): 1048576\1048576, this= 0x13c431c89d0
+[2024-12-14 11:27:03.129] [PSS] [info] [3568|7364]transport_client_tcp2.cpp:58 Start: server= 127.0.0.1:54000, local=0.0.0.0:0, this= 0x13c431c89d0
+[2024-12-14 11:27:03.129] [PSS] [debug] [3568|7364]transport_data_receiver_raw.cpp:34 UpdateConfig: enable_channel= 1, enable_packet= 1, sink= 0x13c431c89e0, this= 0x1397617e870
+[2024-12-14 11:27:03.129] [PSS] [debug] [3568|4992]streaming_driver_interface_impl.cpp:248 NotifyConnectResult: network connect to service result= 0, this= 0x13c41f438b0
+[2024-12-14 11:27:03.129] [PSS] [debug] [3568|4992]transport_client_tcp2.cpp:120 HandleConnect: local= 127.0.0.1:63339, this= 0x13c431c89d0
+[2024-12-14 11:27:03.129] [PSS] [debug] [3568|7364]streaming_driver_interface_impl.cpp:482 InvokeConnectToServiceByRpc: begin to connect to service by rpc, this= 0x13c41f438b0
+[2024-12-14 11:27:03.130] [PSS] [debug] [3568|7364]driver_rpc.cpp:87 ConnectToService: connect to service, request_id= 0, req = client_id: "bvrpwiUCa2PsbATJ" client_name: "StreamingDriverSDK" client_version: "2.0.2.11" client_description: "StreamingSceneRender", this= 0x13c0d7b6fd0
+[2024-12-14 11:27:03.130] [PSS] [debug] [3568|7364]streaming_driver_interface_impl.cpp:499 InvokeConnectToServiceByRpc: connecting to service by rpc, local client_id= bvrpwiUCa2PsbATJ, this= 0x13c41f438b0
+[2024-12-14 11:27:03.130] [PSS] [debug] [3568|7364]driver_rpc.cpp:277 HandleConnectToServiceResp: connect to service result= 0, this= 0x13c0d7b6fd0
+[2024-12-14 11:27:03.130] [PSS] [debug] [3568|7364]streaming_driver_interface_impl.cpp:270 NotifyConnectToServiceResult: connect to service result= 0, this= 0x13c41f438b0
+[2024-12-14 11:27:03.130] [PSS] [debug] [3568|7364]streaming_driver_interface_impl.cpp:753 CreateMediaSession: try to create session, this= 0x13c41f438b0
+[2024-12-14 11:27:03.130] [PSS] [debug] [3568|7364]driver_media_session.cpp:16 DriverMediaSession: session_id= TMYFQbvKrmILyjnF, this= 0x13c32ee0110
+[2024-12-14 11:27:03.130] [PSS] [debug] [3568|7364]driver_media_session.cpp:28 Init: init media session, role= 0 session_id= TMYFQbvKrmILyjnF, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= gnjZgsGWFPtdLnJa},, this= 0x13c32ee0110
+[2024-12-14 11:27:03.130] [PSS] [info] [3568|7364]media_session_impl.cpp:16 SetLocalParam: set local param session_id= TMYFQbvKrmILyjnF, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= gnjZgsGWFPtdLnJa},, this= 0x13b46e8ea00
+[2024-12-14 11:27:03.130] [PSS] [debug] [3568|7364]media_session_impl.cpp:285 UpdateStream: update stream session_id= TMYFQbvKrmILyjnF, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= gnjZgsGWFPtdLnJa},, this= 0x13b46e8ea00
+[2024-12-14 11:27:03.131] [PSS] [debug] [3568|7364]media_transport.cpp:20 Init: try to add channel to external_transport,channel= 1, this= 0x13c3209f410
+[2024-12-14 11:27:03.131] [PSS] [debug] [3568|7364]streaming_driver_interface_impl.cpp:435 AddMediaDataCallback: add transport channel= 1,callback= 0x13c3209f410, this= 0x13c41f438b0
+[2024-12-14 11:27:03.131] [PSS] [debug] [3568|7364]media_transport.cpp:27 Init: init media_transport success, this= 0x13c3209f410
+[2024-12-14 11:27:03.131] [PSS] [info] [3568|7364]event_stream_impl.cpp:16 Init: event stream stream_id= gnjZgsGWFPtdLnJa, this= 0x13c0d7b61d0
+[2024-12-14 11:27:03.131] [PSS] [debug] [3568|7364]event_stream_impl.cpp:23 Init: init event stream success, this= 0x13c0d7b61d0
+[2024-12-14 11:27:03.131] [PSS] [debug] [3568|7364]event_stream_impl.cpp:106 SetMediaTransport: set media_transport to event stream, this= 0x13c0d7b61d0
+[2024-12-14 11:27:03.131] [PSS] [debug] [3568|7364]media_transport.cpp:55 AddMediaDataCallback: callback= 0x13c0d7b61e8, this= 0x13c3209f410
+[2024-12-14 11:27:03.131] [PSS] [debug] [3568|7364]media_session_impl.cpp:537 UpdateEventStream: update event stream success, stream_id= gnjZgsGWFPtdLnJa, this= 0x13b46e8ea00
+[2024-12-14 11:27:03.131] [PSS] [debug] [3568|7364]media_session_impl.cpp:337 UpdateStream: update stream success, this= 0x13b46e8ea00
+[2024-12-14 11:27:03.131] [PSS] [debug] [3568|7364]media_session_impl.cpp:30 SetLocalParam: set local param success, this= 0x13b46e8ea00
+[2024-12-14 11:27:03.131] [PSS] [info] [3568|7364]media_session_impl.cpp:177 GetEventStream: stream_id= gnjZgsGWFPtdLnJa, this= 0x13b46e8ea00
+[2024-12-14 11:27:03.131] [PSS] [debug] [3568|7364]driver_media_session.cpp:64 Init: init media session success, this= 0x13c32ee0110
+[2024-12-14 11:27:03.131] [PSS] [debug] [3568|7364]driver_media_session.cpp:89 GetLocalParam: get local param, this= 0x13c32ee0110
+[2024-12-14 11:27:03.131] [PSS] [info] [3568|7364]media_session_impl.cpp:40 GetLocalParam: get local param, session_id= TMYFQbvKrmILyjnF, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= gnjZgsGWFPtdLnJa},, this= 0x13b46e8ea00
+[2024-12-14 11:27:03.131] [PSS] [debug] [3568|7364]driver_rpc.cpp:124 CreateSessionToService: generate session_id= TMYFQbvKrmILyjnF, this= 0x13c0d7b6fd0
+[2024-12-14 11:27:03.131] [PSS] [debug] [3568|7364]driver_rpc.cpp:139 CreateSessionToService: create session, req= session_param { session_id: "TMYFQbvKrmILyjnF" description: "StreamingSceneRender" connection_type: kConnectionTcp event_streams { stream_id: "gnjZgsGWFPtdLnJa" connection_config { connection_type: kConnectionTcp direction: kSendAndReceive channel: 1 } } }, this= 0x13c0d7b6fd0
+[2024-12-14 11:27:03.131] [PSS] [debug] [3568|7364]streaming_driver_interface_impl.cpp:793 CreateMediaSession: creating session, session_id= TMYFQbvKrmILyjnF, this= 0x13c41f438b0
+[2024-12-14 11:27:03.131] [PSS] [debug] [3568|7364]driver_rpc.cpp:311 HandleCreateSessionResp: create session result= 0, this= 0x13c0d7b6fd0
+[2024-12-14 11:27:03.132] [PSS] [debug] [3568|7364]driver_rpc.cpp:233 UpdateSessionState: service update session state, request_id= 3138, request_msg= session_state: kSessionStateReady session_param { session_id: "TMYFQbvKrmILyjnF" description: "StreamingSceneRender" connection_type: kConnectionTcp event_streams { stream_id: "gnjZgsGWFPtdLnJa" connection_config { connection_type: kConnectionTcp direction: kSendAndReceive channel: 1 } } }, this= 0x13c0d7b6fd0
+[2024-12-14 11:27:03.132] [PSS] [debug] [3568|7364]streaming_driver_interface_impl.cpp:323 NotifyServiceUpdateSessionState: state= 2, this= 0x13c41f438b0
+[2024-12-14 11:27:03.132] [PSS] [debug] [3568|7364]driver_media_session.cpp:100 UpdateSessionState: state= 2, param 0000013C0BF94AA0, this= 0x13c32ee0110
+[2024-12-14 11:27:03.132] [PSS] [info] [3568|7364]media_session_impl.cpp:44 SetRemoteParam: set remote param session_id= TMYFQbvKrmILyjnF, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= gnjZgsGWFPtdLnJa},, this= 0x13b46e8ea00
+[2024-12-14 11:27:03.132] [PSS] [debug] [3568|7364]media_session_impl.cpp:543 NegotiateParam: input remote param session_id= TMYFQbvKrmILyjnF, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= gnjZgsGWFPtdLnJa},, this= 0x13b46e8ea00
+[2024-12-14 11:27:03.132] [PSS] [debug] [3568|7364]media_session_impl.cpp:545 NegotiateParam: input local param session_id= TMYFQbvKrmILyjnF, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= gnjZgsGWFPtdLnJa},, this= 0x13b46e8ea00
+[2024-12-14 11:27:03.132] [PSS] [debug] [3568|7364]media_session_impl.cpp:632 NegotiateParam: output local param session_id= TMYFQbvKrmILyjnF, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= gnjZgsGWFPtdLnJa},, this= 0x13b46e8ea00
+[2024-12-14 11:27:03.132] [PSS] [debug] [3568|7364]media_session_impl.cpp:285 UpdateStream: update stream session_id= TMYFQbvKrmILyjnF, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= gnjZgsGWFPtdLnJa},, this= 0x13b46e8ea00
+[2024-12-14 11:27:03.132] [PSS] [debug] [3568|7364]media_session_impl.cpp:506 UpdateEventStream: event stream existed, reset it, this= 0x13b46e8ea00
+[2024-12-14 11:27:03.132] [PSS] [debug] [3568|7364]event_stream_impl.cpp:27 Reset: reset event stream= gnjZgsGWFPtdLnJa, this= 0x13c0d7b61d0
+[2024-12-14 11:27:03.132] [PSS] [debug] [3568|7364]media_transport.cpp:31 Reset: reset media_transport, this= 0x13c3209f410
+[2024-12-14 11:27:03.132] [PSS] [debug] [3568|7364]media_transport.cpp:20 Init: try to add channel to external_transport,channel= 1, this= 0x13c3209f1b0
+[2024-12-14 11:27:03.132] [PSS] [debug] [3568|7364]streaming_driver_interface_impl.cpp:435 AddMediaDataCallback: add transport channel= 1,callback= 0x13c3209f1b0, this= 0x13c41f438b0
+[2024-12-14 11:27:03.132] [PSS] [debug] [3568|7364]media_transport.cpp:27 Init: init media_transport success, this= 0x13c3209f1b0
+[2024-12-14 11:27:03.132] [PSS] [info] [3568|7364]event_stream_impl.cpp:16 Init: event stream stream_id= gnjZgsGWFPtdLnJa, this= 0x13c0d7b61d0
+[2024-12-14 11:27:03.132] [PSS] [debug] [3568|7364]event_stream_impl.cpp:23 Init: init event stream success, this= 0x13c0d7b61d0
+[2024-12-14 11:27:03.132] [PSS] [debug] [3568|7364]event_stream_impl.cpp:106 SetMediaTransport: set media_transport to event stream, this= 0x13c0d7b61d0
+[2024-12-14 11:27:03.132] [PSS] [debug] [3568|7364]media_transport.cpp:55 AddMediaDataCallback: callback= 0x13c0d7b61e8, this= 0x13c3209f1b0
+[2024-12-14 11:27:03.132] [PSS] [debug] [3568|7364]media_session_impl.cpp:537 UpdateEventStream: update event stream success, stream_id= gnjZgsGWFPtdLnJa, this= 0x13b46e8ea00
+[2024-12-14 11:27:03.132] [PSS] [debug] [3568|7364]media_session_impl.cpp:337 UpdateStream: update stream success, this= 0x13b46e8ea00
+[2024-12-14 11:27:03.132] [PSS] [debug] [3568|7364]media_session_impl.cpp:63 SetRemoteParam: set remote param success, this= 0x13b46e8ea00
+[2024-12-14 11:27:03.132] [PSS] [info] [3568|7364]media_session_impl.cpp:206 Start: start session, session_id= TMYFQbvKrmILyjnF, this= 0x13b46e8ea00
+[2024-12-14 11:27:03.133] [PSS] [debug] [3568|7364]media_session_impl.cpp:230 Start: start video_receive stream, this= 0x13b46e8ea00
+[2024-12-14 11:27:03.133] [PSS] [debug] [3568|7364]event_stream_impl.cpp:43 Start: stream_id= gnjZgsGWFPtdLnJa, this= 0x13c0d7b61d0
+[2024-12-14 11:27:03.133] [PSS] [debug] [3568|7364]media_session_impl.cpp:238 Start: start session success, session_id= TMYFQbvKrmILyjnF, this= 0x13b46e8ea00
+[2024-12-14 11:27:03.133] [PSS] [debug] [3568|7364]driver_media_session.cpp:133 UpdateSessionState: update session config success, this= 0x13c32ee0110
+[2024-12-14 11:27:03.133] [PSS] [debug] [3568|7364]streaming_driver_interface_impl.cpp:341 NotifyServiceUpdateSessionState: session is ready, report connect success, this= 0x13c41f438b0
+[2024-12-14 11:27:03.133] [PSS] [debug] [3568|2756]streaming_driver_interface_impl.cpp:719 HandleUpdateRenderState: state_type: kStateTypePrepared device_info { device_id: "hmd_zQTPt61O" device_name: "StreamingServiceAndroid" }, this= 0x13c41f438b0
+[2024-12-14 11:27:03.133] [PSS] [info] [3568|2756]streaming_driver_interface_impl.cpp:57 StartStreaming: (1920,1920), fps= 72, this= 0x13c41f438b0
+[2024-12-14 11:27:03.133] [PSS] [debug] [3568|7364]streaming_driver_interface_impl.cpp:522 InvokeStartStreaming: send start event to service, this= 0x13c41f438b0
+[2024-12-14 11:27:03.620] [PSS] [debug] [3568|2756]streaming_driver_interface_impl.cpp:719 HandleUpdateRenderState: state_type: kStateTypeStarted, this= 0x13c41f438b0
+[2024-12-14 11:27:03.620] [PSS] [debug] [3568|2756]streaming_driver_interface_impl.cpp:171 StartHandTracking: start hand tracking, this= 0x13c41f438b0
+[2024-12-14 11:27:03.620] [PSS] [error] [3568|2756]streaming_driver_interface_impl.cpp:190 RequestHandTrackingData: "hand_tracking not started", !hand_tracking_flag_, this= 0x13c41f438b0
+[2024-12-14 11:27:46.397] [PSS] [info] [3568|6464]streaming_driver_interface_impl.cpp:67 StopStreaming: stop streaming, this= 0x13c41f438b0
+[2024-12-14 11:27:46.397] [PSS] [debug] [3568|6464]streaming_driver_interface_impl.cpp:180 StopHandTracking: stop hand tracking, this= 0x13c41f438b0
+[2024-12-14 11:27:46.397] [PSS] [debug] [3568|7364]streaming_driver_interface_impl.cpp:534 InvokeStopStreaming: stop streaming, state= 2, this= 0x13c41f438b0
+[2024-12-14 11:27:46.397] [PSS] [error] [3568|7364]streaming_driver_interface_impl.cpp:584 InvokeChangeHandTrackingState: "streaming not started", streaming_state_ != StreamingState::kStreamingReady, this= 0x13c41f438b0
+[2024-12-14 11:27:46.398] [PSS] [debug] [3568|7364]streaming_driver_interface_impl.cpp:503 InvokeDisconnectFromService: disconnect from service, this= 0x13c41f438b0
+[2024-12-14 11:27:46.398] [PSS] [debug] [3568|7364]driver_media_session.cpp:68 Reset: reset client session, this= 0x13c32ee0110
+[2024-12-14 11:27:46.398] [PSS] [info] [3568|7364]media_session_impl.cpp:258 Stop: stop session, session_id= TMYFQbvKrmILyjnF, this= 0x13b46e8ea00
+[2024-12-14 11:27:46.398] [PSS] [debug] [3568|7364]event_stream_impl.cpp:49 Stop: stream_id= gnjZgsGWFPtdLnJa, this= 0x13c0d7b61d0
+[2024-12-14 11:27:46.398] [PSS] [debug] [3568|7364]media_session_impl.cpp:281 Stop: stop session success, session_id= TMYFQbvKrmILyjnF, this= 0x13b46e8ea00
+[2024-12-14 11:27:46.398] [PSS] [debug] [3568|7364]event_stream_impl.cpp:27 Reset: reset event stream= gnjZgsGWFPtdLnJa, this= 0x13c0d7b61d0
+[2024-12-14 11:27:46.398] [PSS] [debug] [3568|7364]media_transport.cpp:31 Reset: reset media_transport, this= 0x13c3209f1b0
+[2024-12-14 11:27:46.399] [PSS] [debug] [3568|7364]driver_media_session.cpp:78 Reset: reset client session success, this= 0x13c32ee0110
+[2024-12-14 11:27:46.399] [PSS] [debug] [3568|7364]driver_media_session.cpp:68 Reset: reset client session, this= 0x13c32ee0110
+[2024-12-14 11:27:46.399] [PSS] [debug] [3568|7364]driver_media_session.cpp:78 Reset: reset client session success, this= 0x13c32ee0110
+[2024-12-14 11:27:46.399] [PSS] [debug] [3568|7364]driver_rpc.cpp:109 DisconnectFromService: disconnect from service, request_id= 2req = client_id: "bvrpwiUCa2PsbATJ", this= 0x13c0d7b6fd0
+[2024-12-14 11:27:46.499] [PSS] [debug] [3568|7364]driver_rpc.cpp:294 HandleDisconnectFromServiceResp: disconnect from service result= -5, this= 0x13c0d7b6fd0
+[2024-12-14 11:27:46.499] [PSS] [error] [3568|7364]driver_rpc.cpp:299 HandleDisconnectFromServiceResp: rpc error, this= 0x13c0d7b6fd0
+[2024-12-14 11:27:46.499] [PSS] [debug] [3568|7364]streaming_driver_interface_impl.cpp:287 NotifyDisconnectFromServiceResult: disconnect from service result= -5, this= 0x13c41f438b0
+[2024-12-14 11:27:46.577] [PSS] [error] [3568|7364]rpc.cpp:283 HandleReceiveData: "response cannot find correspond request,", iter == inflight_requests_.end(), this= 0x13bfaf60210
+[2024-12-14 11:27:46.577] [PSS] [error] [3568|4992]transport_client_tcp2.cpp:176 HandleReceiveDataResult: receive error= 10054, msg= 远程主机强迫关闭了一个现有的连接。
+[2024-12-14 11:27:46.577] [PSS] [error] [3568|4992]transport_client_tcp2.cpp:180 HandleReceiveDataResult: has been disconnected, this= 0x13c431c89d0
+[2024-12-14 11:27:46.577] [PSS] [debug] [3568|7364]streaming_driver_interface_impl.cpp:699 HandleNetworkDisconnect: handle network disconnect,reason= 10054, this= 0x13c41f438b0
+[2024-12-14 11:28:17.457] [PSS] [debug] [3568|6464]streaming_driver_interface_impl.cpp:25 StreamingDriverInterfaceImpl: callback= 0x13c0ceac350, this= 0x13c32d23130
+[2024-12-14 11:28:17.458] [PSS] [debug] [3568|6464]streaming_driver_interface_impl.cpp:30 ~StreamingDriverInterfaceImpl: called, this= 0x13c41f438b0
+[2024-12-14 11:28:17.458] [PSS] [debug] [3568|6464]transport_client_tcp2.cpp:71 Stop: called, this= 0x13c431c89d0
+[2024-12-14 11:28:17.458] [PSS] [debug] [3568|6464]streaming_driver_interface_impl.cpp:95 SetTrackingOrigin: tracking origin= FloorLevel, this= 0x13c32d23130
+[2024-12-14 11:28:17.458] [PSS] [debug] [3568|6464]streaming_driver_interface_impl.cpp:39 ConnectToService: try to connect to service, this= 0x13c32d23130
+[2024-12-14 11:28:17.458] [PSS] [error] [3568|6800]streaming_driver_interface_impl.cpp:572 InvokeSetTrackingOrigin: "invalid media session", !media_session_, this= 0x13c32d23130
+[2024-12-14 11:28:17.458] [PSS] [debug] [3568|6800]streaming_driver_interface_impl.cpp:469 InvokeConnectToService: connect to service through the network, port= 54000, this= 0x13c32d23130
+[2024-12-14 11:28:17.458] [PSS] [debug] [3568|6800]transport_client_tcp2.cpp:34 Start: buffer size(send\recv): 1048576\1048576, this= 0x13c431cc490
+[2024-12-14 11:28:17.459] [PSS] [info] [3568|6800]transport_client_tcp2.cpp:58 Start: server= 127.0.0.1:54000, local=0.0.0.0:0, this= 0x13c431cc490
+[2024-12-14 11:28:17.459] [PSS] [debug] [3568|6800]transport_data_receiver_raw.cpp:34 UpdateConfig: enable_channel= 1, enable_packet= 1, sink= 0x13c431cc4a0, this= 0x13bfdbb37c0
+[2024-12-14 11:28:17.459] [PSS] [debug] [3568|7996]streaming_driver_interface_impl.cpp:248 NotifyConnectResult: network connect to service result= 0, this= 0x13c32d23130
+[2024-12-14 11:28:17.459] [PSS] [debug] [3568|7996]transport_client_tcp2.cpp:120 HandleConnect: local= 127.0.0.1:63354, this= 0x13c431cc490
+[2024-12-14 11:28:17.459] [PSS] [debug] [3568|6800]streaming_driver_interface_impl.cpp:482 InvokeConnectToServiceByRpc: begin to connect to service by rpc, this= 0x13c32d23130
+[2024-12-14 11:28:17.459] [PSS] [debug] [3568|6800]driver_rpc.cpp:87 ConnectToService: connect to service, request_id= 0, req = client_id: "Plf4sSbni9zIdOTe" client_name: "StreamingDriverSDK" client_version: "2.0.2.11" client_description: "StreamingSceneRender", this= 0x13bad8beea0
+[2024-12-14 11:28:17.459] [PSS] [debug] [3568|6800]streaming_driver_interface_impl.cpp:499 InvokeConnectToServiceByRpc: connecting to service by rpc, local client_id= Plf4sSbni9zIdOTe, this= 0x13c32d23130
+[2024-12-14 11:28:17.460] [PSS] [debug] [3568|6800]driver_rpc.cpp:277 HandleConnectToServiceResp: connect to service result= 0, this= 0x13bad8beea0
+[2024-12-14 11:28:17.460] [PSS] [debug] [3568|6800]streaming_driver_interface_impl.cpp:270 NotifyConnectToServiceResult: connect to service result= 0, this= 0x13c32d23130
+[2024-12-14 11:28:17.460] [PSS] [debug] [3568|6800]streaming_driver_interface_impl.cpp:753 CreateMediaSession: try to create session, this= 0x13c32d23130
+[2024-12-14 11:28:17.460] [PSS] [debug] [3568|6800]driver_media_session.cpp:16 DriverMediaSession: session_id= oRKprscwrfnhAYhy, this= 0x13979322af0
+[2024-12-14 11:28:17.460] [PSS] [debug] [3568|6800]driver_media_session.cpp:28 Init: init media session, role= 0 session_id= oRKprscwrfnhAYhy, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= bVTBLBIcOqgIcUnw},, this= 0x13979322af0
+[2024-12-14 11:28:17.460] [PSS] [info] [3568|6800]media_session_impl.cpp:16 SetLocalParam: set local param session_id= oRKprscwrfnhAYhy, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= bVTBLBIcOqgIcUnw},, this= 0x13c32a4d110
+[2024-12-14 11:28:17.460] [PSS] [debug] [3568|6800]media_session_impl.cpp:285 UpdateStream: update stream session_id= oRKprscwrfnhAYhy, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= bVTBLBIcOqgIcUnw},, this= 0x13c32a4d110
+[2024-12-14 11:28:17.460] [PSS] [debug] [3568|6800]media_transport.cpp:20 Init: try to add channel to external_transport,channel= 1, this= 0x13bae669ab0
+[2024-12-14 11:28:17.460] [PSS] [debug] [3568|6800]streaming_driver_interface_impl.cpp:435 AddMediaDataCallback: add transport channel= 1,callback= 0x13bae669ab0, this= 0x13c32d23130
+[2024-12-14 11:28:17.460] [PSS] [debug] [3568|6800]media_transport.cpp:27 Init: init media_transport success, this= 0x13bae669ab0
+[2024-12-14 11:28:17.460] [PSS] [info] [3568|6800]event_stream_impl.cpp:16 Init: event stream stream_id= bVTBLBIcOqgIcUnw, this= 0x13979f95d10
+[2024-12-14 11:28:17.460] [PSS] [debug] [3568|6800]event_stream_impl.cpp:23 Init: init event stream success, this= 0x13979f95d10
+[2024-12-14 11:28:17.460] [PSS] [debug] [3568|6800]event_stream_impl.cpp:106 SetMediaTransport: set media_transport to event stream, this= 0x13979f95d10
+[2024-12-14 11:28:17.460] [PSS] [debug] [3568|6800]media_transport.cpp:55 AddMediaDataCallback: callback= 0x13979f95d28, this= 0x13bae669ab0
+[2024-12-14 11:28:17.460] [PSS] [debug] [3568|6800]media_session_impl.cpp:537 UpdateEventStream: update event stream success, stream_id= bVTBLBIcOqgIcUnw, this= 0x13c32a4d110
+[2024-12-14 11:28:17.460] [PSS] [debug] [3568|6800]media_session_impl.cpp:337 UpdateStream: update stream success, this= 0x13c32a4d110
+[2024-12-14 11:28:17.460] [PSS] [debug] [3568|6800]media_session_impl.cpp:30 SetLocalParam: set local param success, this= 0x13c32a4d110
+[2024-12-14 11:28:17.460] [PSS] [info] [3568|6800]media_session_impl.cpp:177 GetEventStream: stream_id= bVTBLBIcOqgIcUnw, this= 0x13c32a4d110
+[2024-12-14 11:28:17.460] [PSS] [debug] [3568|6800]driver_media_session.cpp:64 Init: init media session success, this= 0x13979322af0
+[2024-12-14 11:28:17.460] [PSS] [debug] [3568|6800]driver_media_session.cpp:89 GetLocalParam: get local param, this= 0x13979322af0
+[2024-12-14 11:28:17.460] [PSS] [info] [3568|6800]media_session_impl.cpp:40 GetLocalParam: get local param, session_id= oRKprscwrfnhAYhy, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= bVTBLBIcOqgIcUnw},, this= 0x13c32a4d110
+[2024-12-14 11:28:17.460] [PSS] [debug] [3568|6800]driver_rpc.cpp:124 CreateSessionToService: generate session_id= oRKprscwrfnhAYhy, this= 0x13bad8beea0
+[2024-12-14 11:28:17.460] [PSS] [debug] [3568|6800]driver_rpc.cpp:139 CreateSessionToService: create session, req= session_param { session_id: "oRKprscwrfnhAYhy" description: "StreamingSceneRender" connection_type: kConnectionTcp event_streams { stream_id: "bVTBLBIcOqgIcUnw" connection_config { connection_type: kConnectionTcp direction: kSendAndReceive channel: 1 } } }, this= 0x13bad8beea0
+[2024-12-14 11:28:17.460] [PSS] [debug] [3568|6800]streaming_driver_interface_impl.cpp:793 CreateMediaSession: creating session, session_id= oRKprscwrfnhAYhy, this= 0x13c32d23130
+[2024-12-14 11:28:17.461] [PSS] [debug] [3568|6800]driver_rpc.cpp:311 HandleCreateSessionResp: create session result= 0, this= 0x13bad8beea0
+[2024-12-14 11:28:17.462] [PSS] [debug] [3568|6800]driver_rpc.cpp:233 UpdateSessionState: service update session state, request_id= 8244, request_msg= session_state: kSessionStateReady session_param { session_id: "oRKprscwrfnhAYhy" description: "StreamingSceneRender" connection_type: kConnectionTcp event_streams { stream_id: "bVTBLBIcOqgIcUnw" connection_config { connection_type: kConnectionTcp direction: kSendAndReceive channel: 1 } } }, this= 0x13bad8beea0
+[2024-12-14 11:28:17.462] [PSS] [debug] [3568|6800]streaming_driver_interface_impl.cpp:323 NotifyServiceUpdateSessionState: state= 2, this= 0x13c32d23130
+[2024-12-14 11:28:17.462] [PSS] [debug] [3568|6800]driver_media_session.cpp:100 UpdateSessionState: state= 2, param 0000013BFAD22900, this= 0x13979322af0
+[2024-12-14 11:28:17.462] [PSS] [info] [3568|6800]media_session_impl.cpp:44 SetRemoteParam: set remote param session_id= oRKprscwrfnhAYhy, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= bVTBLBIcOqgIcUnw},, this= 0x13c32a4d110
+[2024-12-14 11:28:17.462] [PSS] [debug] [3568|6800]media_session_impl.cpp:543 NegotiateParam: input remote param session_id= oRKprscwrfnhAYhy, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= bVTBLBIcOqgIcUnw},, this= 0x13c32a4d110
+[2024-12-14 11:28:17.462] [PSS] [debug] [3568|6800]media_session_impl.cpp:545 NegotiateParam: input local param session_id= oRKprscwrfnhAYhy, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= bVTBLBIcOqgIcUnw},, this= 0x13c32a4d110
+[2024-12-14 11:28:17.462] [PSS] [debug] [3568|6800]media_session_impl.cpp:632 NegotiateParam: output local param session_id= oRKprscwrfnhAYhy, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= bVTBLBIcOqgIcUnw},, this= 0x13c32a4d110
+[2024-12-14 11:28:17.462] [PSS] [debug] [3568|6800]media_session_impl.cpp:285 UpdateStream: update stream session_id= oRKprscwrfnhAYhy, description= StreamingSceneRender, conn_type= 2, event_stream {stream_id= bVTBLBIcOqgIcUnw},, this= 0x13c32a4d110
+[2024-12-14 11:28:17.462] [PSS] [debug] [3568|6800]media_session_impl.cpp:506 UpdateEventStream: event stream existed, reset it, this= 0x13c32a4d110
+[2024-12-14 11:28:17.462] [PSS] [debug] [3568|6800]event_stream_impl.cpp:27 Reset: reset event stream= bVTBLBIcOqgIcUnw, this= 0x13979f95d10
+[2024-12-14 11:28:17.462] [PSS] [debug] [3568|6800]media_transport.cpp:31 Reset: reset media_transport, this= 0x13bae669ab0
+[2024-12-14 11:28:17.462] [PSS] [debug] [3568|6800]media_transport.cpp:20 Init: try to add channel to external_transport,channel= 1, this= 0x13c4345feb0
+[2024-12-14 11:28:17.462] [PSS] [debug] [3568|6800]streaming_driver_interface_impl.cpp:435 AddMediaDataCallback: add transport channel= 1,callback= 0x13c4345feb0, this= 0x13c32d23130
+[2024-12-14 11:28:17.462] [PSS] [debug] [3568|6800]media_transport.cpp:27 Init: init media_transport success, this= 0x13c4345feb0
+[2024-12-14 11:28:17.462] [PSS] [info] [3568|6800]event_stream_impl.cpp:16 Init: event stream stream_id= bVTBLBIcOqgIcUnw, this= 0x13979f95d10
+[2024-12-14 11:28:17.462] [PSS] [debug] [3568|6800]event_stream_impl.cpp:23 Init: init event stream success, this= 0x13979f95d10
+[2024-12-14 11:28:17.462] [PSS] [debug] [3568|6800]event_stream_impl.cpp:106 SetMediaTransport: set media_transport to event stream, this= 0x13979f95d10
+[2024-12-14 11:28:17.462] [PSS] [debug] [3568|6800]media_transport.cpp:55 AddMediaDataCallback: callback= 0x13979f95d28, this= 0x13c4345feb0
+[2024-12-14 11:28:17.462] [PSS] [debug] [3568|6800]media_session_impl.cpp:537 UpdateEventStream: update event stream success, stream_id= bVTBLBIcOqgIcUnw, this= 0x13c32a4d110
+[2024-12-14 11:28:17.462] [PSS] [debug] [3568|6800]media_session_impl.cpp:337 UpdateStream: update stream success, this= 0x13c32a4d110
+[2024-12-14 11:28:17.462] [PSS] [debug] [3568|6800]media_session_impl.cpp:63 SetRemoteParam: set remote param success, this= 0x13c32a4d110
+[2024-12-14 11:28:17.462] [PSS] [info] [3568|6800]media_session_impl.cpp:206 Start: start session, session_id= oRKprscwrfnhAYhy, this= 0x13c32a4d110
+[2024-12-14 11:28:17.462] [PSS] [debug] [3568|6800]media_session_impl.cpp:230 Start: start video_receive stream, this= 0x13c32a4d110
+[2024-12-14 11:28:17.462] [PSS] [debug] [3568|6800]event_stream_impl.cpp:43 Start: stream_id= bVTBLBIcOqgIcUnw, this= 0x13979f95d10
+[2024-12-14 11:28:17.462] [PSS] [debug] [3568|6800]media_session_impl.cpp:238 Start: start session success, session_id= oRKprscwrfnhAYhy, this= 0x13c32a4d110
+[2024-12-14 11:28:17.462] [PSS] [debug] [3568|6800]driver_media_session.cpp:133 UpdateSessionState: update session config success, this= 0x13979322af0
+[2024-12-14 11:28:17.462] [PSS] [debug] [3568|6800]streaming_driver_interface_impl.cpp:341 NotifyServiceUpdateSessionState: session is ready, report connect success, this= 0x13c32d23130
+[2024-12-14 11:28:17.462] [PSS] [debug] [3568|2680]streaming_driver_interface_impl.cpp:719 HandleUpdateRenderState: state_type: kStateTypePrepared device_info { device_id: "hmd_zQTPt61O" device_name: "StreamingServiceAndroid" }, this= 0x13c32d23130
+[2024-12-14 11:28:17.462] [PSS] [info] [3568|2680]streaming_driver_interface_impl.cpp:57 StartStreaming: (1920,1920), fps= 72, this= 0x13c32d23130
+[2024-12-14 11:28:17.462] [PSS] [debug] [3568|6800]streaming_driver_interface_impl.cpp:522 InvokeStartStreaming: send start event to service, this= 0x13c32d23130
+[2024-12-14 11:28:17.876] [PSS] [debug] [3568|2680]streaming_driver_interface_impl.cpp:719 HandleUpdateRenderState: state_type: kStateTypeStarted, this= 0x13c32d23130
+[2024-12-14 11:28:17.876] [PSS] [debug] [3568|2680]streaming_driver_interface_impl.cpp:171 StartHandTracking: start hand tracking, this= 0x13c32d23130
+[2024-12-14 11:28:17.876] [PSS] [error] [3568|2680]streaming_driver_interface_impl.cpp:190 RequestHandTrackingData: "hand_tracking not started", !hand_tracking_flag_, this= 0x13c32d23130
+[2024-12-14 11:29:35.405] [PSS] [info] [3568|6464]streaming_driver_interface_impl.cpp:67 StopStreaming: stop streaming, this= 0x13c32d23130
+[2024-12-14 11:29:35.405] [PSS] [debug] [3568|6464]streaming_driver_interface_impl.cpp:180 StopHandTracking: stop hand tracking, this= 0x13c32d23130
+[2024-12-14 11:29:35.406] [PSS] [debug] [3568|6800]streaming_driver_interface_impl.cpp:534 InvokeStopStreaming: stop streaming, state= 2, this= 0x13c32d23130
+[2024-12-14 11:29:35.406] [PSS] [error] [3568|6800]streaming_driver_interface_impl.cpp:584 InvokeChangeHandTrackingState: "streaming not started", streaming_state_ != StreamingState::kStreamingReady, this= 0x13c32d23130
+[2024-12-14 11:29:35.407] [PSS] [debug] [3568|6800]streaming_driver_interface_impl.cpp:503 InvokeDisconnectFromService: disconnect from service, this= 0x13c32d23130
+[2024-12-14 11:29:35.407] [PSS] [debug] [3568|6800]driver_media_session.cpp:68 Reset: reset client session, this= 0x13979322af0
+[2024-12-14 11:29:35.407] [PSS] [info] [3568|6800]media_session_impl.cpp:258 Stop: stop session, session_id= oRKprscwrfnhAYhy, this= 0x13c32a4d110
+[2024-12-14 11:29:35.407] [PSS] [debug] [3568|6800]event_stream_impl.cpp:49 Stop: stream_id= bVTBLBIcOqgIcUnw, this= 0x13979f95d10
+[2024-12-14 11:29:35.407] [PSS] [debug] [3568|6800]media_session_impl.cpp:281 Stop: stop session success, session_id= oRKprscwrfnhAYhy, this= 0x13c32a4d110
+[2024-12-14 11:29:35.407] [PSS] [debug] [3568|6800]event_stream_impl.cpp:27 Reset: reset event stream= bVTBLBIcOqgIcUnw, this= 0x13979f95d10
+[2024-12-14 11:29:35.407] [PSS] [debug] [3568|6800]media_transport.cpp:31 Reset: reset media_transport, this= 0x13c4345feb0
+[2024-12-14 11:29:35.407] [PSS] [debug] [3568|6800]driver_media_session.cpp:78 Reset: reset client session success, this= 0x13979322af0
+[2024-12-14 11:29:35.407] [PSS] [debug] [3568|6800]driver_media_session.cpp:68 Reset: reset client session, this= 0x13979322af0
+[2024-12-14 11:29:35.407] [PSS] [debug] [3568|6800]driver_media_session.cpp:78 Reset: reset client session success, this= 0x13979322af0
+[2024-12-14 11:29:35.407] [PSS] [debug] [3568|6800]driver_rpc.cpp:109 DisconnectFromService: disconnect from service, request_id= 2req = client_id: "Plf4sSbni9zIdOTe", this= 0x13bad8beea0
+[2024-12-14 11:29:35.508] [PSS] [debug] [3568|6800]driver_rpc.cpp:294 HandleDisconnectFromServiceResp: disconnect from service result= -5, this= 0x13bad8beea0
+[2024-12-14 11:29:35.508] [PSS] [error] [3568|6800]driver_rpc.cpp:299 HandleDisconnectFromServiceResp: rpc error, this= 0x13bad8beea0
+[2024-12-14 11:29:35.508] [PSS] [debug] [3568|6800]streaming_driver_interface_impl.cpp:287 NotifyDisconnectFromServiceResult: disconnect from service result= -5, this= 0x13c32d23130
+[2024-12-14 11:29:35.565] [PSS] [error] [3568|6800]rpc.cpp:283 HandleReceiveData: "response cannot find correspond request,", iter == inflight_requests_.end(), this= 0x13b474a01c0
+[2024-12-14 11:29:35.566] [PSS] [error] [3568|7996]transport_client_tcp2.cpp:176 HandleReceiveDataResult: receive error= 10054, msg= 远程主机强迫关闭了一个现有的连接。
+[2024-12-14 11:29:35.566] [PSS] [error] [3568|7996]transport_client_tcp2.cpp:180 HandleReceiveDataResult: has been disconnected, this= 0x13c431cc490
+[2024-12-14 11:29:35.566] [PSS] [debug] [3568|6800]streaming_driver_interface_impl.cpp:699 HandleNetworkDisconnect: handle network disconnect,reason= 10054, this= 0x13c32d23130
